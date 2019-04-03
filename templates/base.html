@@ -29,7 +29,7 @@
 
 </head>
 
-body>
+<body>
 <!-- WRAPPER -->
 <div id="wrapper">
 
@@ -37,7 +37,8 @@ body>
     <!-- TOP NAVBAR -->
     <nav class="navbar navbar-default top-navbar" role="navigation">
         <div class="navbar-header">
-            <a class="navbar-brand company-logo" href=""><img class="company-logo" src="/static/img/creolabs-white.png" alt="Creo Labs Logo"/></a>
+            <a class="navbar-brand company-logo" href=""><img class="company-logo" src="/static/img/creolabs-white.png"
+                                                              alt="Creo Labs Logo"/></a>
         </div>
         <ul class="nav navbar-top-links navbar-right">
             <li><a class="nav-link" href=""><i class="fas fa-terminal"></i><b> REST API</b></a>
@@ -96,6 +97,8 @@ body>
     <p> Powered by CreoLabs &trade;</p>
 </div>
 
+<!-- jQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!-- Bootstrap Js -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
@@ -107,7 +110,7 @@ body>
 
 <!-- Custom Js -->
 <script src="{{url_for('static', filename='js/custom-scripts.js')}}"></script>
-
+<script src="{{url_for('static', filename='js/forms.js')}}"></script>
 
 </body>
 
