@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+
+{% block extrahead %}
+
+<link href="{{url_for('static', filename='css/forms.css')}}" rel="stylesheet"/>
+{% endblock %}
+{% block content %}
+<div class="row row-alert" style="min-height: 72px">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+
+            {% for category, message in messages %}
+            <div class="{{ category }}">
+                <div class="messages text-center">
+                    {{ message }}
+                </div>
+            </div>
+            {% endfor %}
+
+            {% endif %}
+            {% endwith %}
+        </div>
+
+<div class="container">
+
+    <form class="form-signin" method="POST" id="form-signin" action="{{ url_for('userregister') }}">
+        <i class="material-icons" id="icon-login">assignment_turned_in</i>
+        <fieldset class="form-box">
+            {{ form.hidden_tag() }}
+            <div class="row text-center">
+                <h4>Register User</h4>
+            </div>
+            <div class="row plain-element">
+                <div class="input-field col s6 field-description">
+                    <h6>Your Email Address:</h6>
+                </div>
+                <div class="input-field col s6">
+                    {{ wtf.form_field(form.email)}}
+                </div>
+            </div>
+            <div class="row plain-element">
+                <div class="input-field col s6 field-description">
+                    <h6>Your Username:</h6>
+                </div>
+                <div class="input-field col s6">
+                    {{ wtf.form_field(form.username)}}
+                </div>
+            </div>
+            <div class="row plain-element">
+                <div class="input-field col s6 field-description">
+                    <h6>Your Password:</h6>
+                </div>
+                <div class="input-field col s6">
+                    {{ wtf.form_field(form.password)}}
+                </div>
+            </div>
+            <div class="row plain-element">
+                <div class="input-field col s6 field-description">
+                    <h6>Confirm Password:</h6>
+                </div>
+                <div class="input-field col s6">
+                    {{ wtf.form_field(form.confirm)}}
+                </div>
+            </div>
+
+            <button type="submit" class="btn-login"><span>Continue <i
+                    class="far fa-arrow-alt-circle-right"></i></span>
+            </button>
+        </fieldset>
+    </form>
+</div>
+
+
+{% endblock %}
+

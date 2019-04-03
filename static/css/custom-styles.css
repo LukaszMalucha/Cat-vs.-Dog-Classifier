@@ -1,0 +1,563 @@
+/*------------------------------------------------------------------------------
+    MAIN  STYLES    
+------------------------------------------------------------------------------*/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url('../../static/img/nice.png');
+    background-size: cover
+
+}
+
+
+#wrapper {
+    width: 100%;
+
+}
+
+
+#page-index {
+    width: 100%;
+    display: block;
+    overflow: auto;
+    position: relative;
+    top: 55px;
+
+}
+
+#page-index a {
+    text-decoration: none;
+    outline: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn-submit {
+    width: 100%;
+    height: 50px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-color: transparent;
+    text-align: right;
+    color: white;
+    background-color: #165d81;
+    font-size: 18px;
+}
+
+.btn-submit:hover, .btn-submit:active, .btn-submit:focus {
+    background-color: #0f415a;
+}
+
+
+
+#text {
+    color: black;
+}
+
+
+label {
+    margin-left: 30px;
+    font-weight: normal;
+    color: black;
+    font-size: 12px;
+}
+
+.no-padding-left {
+    padding-left: 0px !important;
+}
+
+h2 {
+    color: black;
+    font-size: 20px;
+    margin: 5px;
+}
+
+
+.row-alert {
+    min-height: 72px;
+}
+
+
+.plain-element {
+    margin:0px;
+    padding: 0px;
+}
+
+.warning {
+    color: red;
+}
+
+/*----------------------------------------------
+    MAP
+------------------------------------------------*/
+
+#mapid {
+    height:89vh;
+    z-index: 0;
+}
+
+
+/*------------------------------------------------------------------------------
+    DASHBOARD CARDS    
+------------------------------------------------------------------------------*/
+
+
+.dashboard-cards {
+    border: none;
+    text-align: center;
+    padding: 1%;
+    margin-top: 2%;
+    margin-bottom:10%;
+    box-shadow: none;
+    width: 100%;
+    min-height: 600px;
+    display: block;
+    overflow: auto;
+    background-image: url('../../static/img/backg.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.row-title {
+    width: 100%;
+    background-color: #cfd4d8;
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px #a5a9ac;
+    margin-left: 0px;
+}
+
+.row-dashboard {
+    width: 100%;
+    margin: auto;
+}
+
+.row-cards {
+    width: 100%;
+    text-align: center;
+    padding: 2% 1% 2% 1%;
+}
+
+.row-table {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+
+}
+
+.row-warning {
+    height: 20px;
+}
+
+.form-card {
+    width: 300px;
+    z-index: 100;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border-width: 3px;
+    border-radius: 5px;
+    padding: 0px;
+    box-shadow: none;
+    background-image: linear-gradient(to bottom right, #fafafa, white);
+}
+
+.form-card label {
+    color: #787878;
+    font-size: .9rem;
+}
+
+
+.county-card {
+    top: 75px;
+}
+
+.blue-box {
+    position: absolute;
+    z-index: 90;
+    left: 10px;
+    top: 5px;
+    width: 35px;
+    height: 70px;
+    background: #73b6e6;
+}
+
+.dashboard-card {
+    background: white;
+    height: 200px;
+}
+
+
+.box {
+   display: flex;
+   align-items:center;
+   margin-bottom: 10px;
+}
+
+/*------------------------------------------------------------------------------
+    EDIT & ADD FORMS + TABLE    
+------------------------------------------------------------------------------*/
+
+
+.input-field label{
+    margin-left: 0px;
+
+}
+
+
+input[type="text"]:not(.browser-default) {
+    color: black;
+    height: 2rem;
+    font-size: 0.9rem;
+}
+input[type=text],
+select,
+textarea {
+    width: 90%;
+    height: 50px;
+    padding: 12px;
+    border-radius: 10px;
+    border-color: #f2f2f2;
+    box-sizing: border-box;
+    margin: 0px 50px 0px 15px;
+    resize: vertical;
+    background-color: #f2f2f2;
+    color: white;
+}
+
+input[type="number"]:focus:not([readonly]) {
+    border-bottom: 1px solid black;
+    box-shadow: 0 1px 0 0 black;
+}
+
+input[type="number"].valid,
+input[type="number"]:focus.valid {
+    border-bottom: 1px solid #8B0000;
+    box-shadow: 0 1px 0 0 #8B0000;
+}
+
+th,
+td,
+tr {
+    color: black;
+    height: 36px;
+    padding-left: 5px;
+    font-size: 0.9rem;
+}
+
+textarea.materialize-textarea {
+    color: black;
+}
+
+.select-wrapper input.select-dropdown {
+    color: black;
+}
+
+
+
+input[type="text"],
+input[type="number"] {
+    text-align: center;
+}
+
+
+
+
+.table-card {
+    background-color: white;
+    padding: 20px 120px 20px 120px;
+    border-radius: 10px;
+    max-height: 800px;
+    overflow: auto;
+}
+
+
+
+
+/*------------------------------------------------------------------------------
+    TABLES
+------------------------------------------------------------------------------*/
+
+.table-plain tr,
+.table-plain td {
+    border: none;
+    font-size: 1rem;
+}
+
+
+.table-responsive {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#dataTables-example-1_wrapper,
+#dataTables-example-2_wrapper,
+#dataTables-example_wrapper {
+    margin: 2px;
+}
+
+
+table.dataTable, table.dataTable thead th {
+    border: 1px solid  gray;
+}
+
+.dataTables_info {
+    color:  #191919 !important;
+    font-size: 1.5rem !important;
+}
+
+.dataTables_filter>label,
+.dataTables_length>label {
+        color:  #191919;
+        font-size: 1.5rem;
+}
+
+.table.dataTable thead th{
+    color: white;
+    font-size: 18px;
+}
+
+
+#dataTables-example-1 tbody tr,
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+    color: grey;
+}
+
+
+.table.dataTable tbody tr,
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+    color: #191919;
+    font-weight: bold;
+}
+
+.table-bordered > tbody > tr > td {
+    border: 1px solid  gray;
+    line-height: 1.5;
+}
+
+#dataTables-example-1 > thead {
+    background-color:  grey;
+}
+
+.table.dataTable > thead {
+   background-color:  #165d81;
+}
+
+#dataTables-example-1_previous,
+#dataTables-example-1_next,
+#dataTables-example-2_previous,
+#dataTables-example-2_next,
+#dataTables-example_previous,
+#dataTables-example_next {
+    color: #191919 !important;
+}
+
+#dataTables-example-1_length,
+#dataTables-example-2_length,
+#dataTables-example_length {
+    width: 10%;
+
+}
+
+#dataTables-example-1_length > label,
+#dataTables-example-2_length > label,
+#dataTables-example_length > label {
+    display: ruby;
+}
+
+
+#dataTables-example-1_filter input[type="search"]:not(.browser-default),
+#dataTables-example-1_filter input[type="text"]:not(.browser-default),
+#dataTables-example-2_filter input[type="search"]:not(.browser-default),
+#dataTables-example-2_filter input[type="text"]:not(.browser-default),
+#dataTables-example_filter input[type="search"]:not(.browser-default),
+#dataTables-example_filter input[type="text"]:not(.browser-default) {
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    width: 70%;
+    color:  #191919;
+    height: 2rem;
+
+}
+#dataTables-example-1_length input[type="search"]:not(.browser-default),
+#dataTables-example-1_length input[type="text"]:not(.browser-default),
+#dataTables-example-2_length input[type="search"]:not(.browser-default),
+#dataTables-example-2_length input[type="text"]:not(.browser-default),
+#dataTables-example_length input[type="search"]:not(.browser-default),
+#dataTables-example_length input[type="text"]:not(.browser-default) {
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    color:  #191919;
+}
+
+#dataTables-example-1 td,
+#dataTables-example-2 td {
+    height: 36px;
+    font-size: 11px;
+}
+
+.table_pin {
+    font-size: 1.4rem;
+}
+
+/*------------------------------------------------------------------------------
+    FOOTER
+------------------------------------------------------------------------------*/
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #181818;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 15px;
+    color: #fff;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+
+/*------------------------------------------------------------------------------
+    MEDIA QUERIES     
+------------------------------------------------------------------------------*/
+
+
+
+
+/* MAX WIDTHS: LARGE SCREEN---------------------------------------------------*/
+
+@media(max-width:1810px) {
+
+}
+
+@media(max-width:1600px) {
+
+
+    #page-index {
+        padding: 0;
+    }
+
+    .county-card {
+
+       top: 55px;
+
+    }
+
+
+
+    .row-table {
+        width: 70%;
+        margin-left: 30%;
+    }
+
+
+    .table-card {
+        padding: 0px;
+    }
+
+
+
+
+
+}
+
+/* MAX WIDTHS: MEDIUM SCREEN---------------------------------------------------*/
+
+@media(max-width:1200px) {
+
+
+
+}
+
+@media(max-width:1056px) {
+
+}
+
+@media(max-width:993px) {
+
+    .county-card {
+       position: relative;
+       width: 40%;
+       left: 0px;
+       top: 0px;
+
+
+    }
+
+    .row-table {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+
+    td {
+        font-size: 1rem;
+    }
+
+    .table.dataTable thead th {
+        font-size: 1.2rem;
+    }
+
+    .dataTables_info,
+    .dataTables_filter > label,
+    .dataTables_length > label {
+        font-size: 1rem;
+    }
+
+}
+
+
+/* MAX WIDTHS: EXTRA-SMALL SCREEN---------------------------------------------*/
+
+@media(max-width:521px) {
+
+
+    .form-card {
+    width: 95%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 50px;
+    top: 20px;
+    left: 0px;
+
+    }
+
+    .row-table {
+        width: 100%;
+
+    }
+
+
+
+    td {
+        font-size: 0.7rem;
+    }
+
+    .table.dataTable thead th {
+        font-size: 0.9rem;
+    }
+
+    .dataTables_info,
+    .dataTables_filter > label,
+    .dataTables_length > label {
+        font-size: 1rem;
+    }
+
+    .table.dataTable thead th,
+    .table.dataTable tbody td {
+    padding: 3px 3px !important;
+    }
+
+}
