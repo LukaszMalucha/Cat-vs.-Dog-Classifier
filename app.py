@@ -23,7 +23,7 @@ app.config['FLASKS3_BUCKET_NAME'] = os.environ.get('FLASKS3_BUCKET_NAME')
 photos = UploadSet('photos', IMAGES)  # image upload handling
 configure_uploads(app, photos)
 
-app.config['DEBUG'] = True
+app.config['DEBUG'] = False
 api = Api(app)
 
 Bootstrap(app)
