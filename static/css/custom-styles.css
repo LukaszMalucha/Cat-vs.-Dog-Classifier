@@ -208,19 +208,35 @@ input.valid[type="text"]:not(.browser-default){
     text-align: center;
 }
 
+/*------------------------------------------------------------------------------
+    ANIMATIONS
+    CREDITS : "https://codepen.io/psyonline/pen/yayYWg"
+------------------------------------------------------------------------------*/
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #8c8c8c;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  animation: spin 1.5s linear infinite;
+  margin: auto;
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 
 /*------------------------------------------------------------------------------
     MEDIA QUERIES     
 ------------------------------------------------------------------------------*/
 
 
-
-
 /* MAX WIDTHS: LARGE SCREEN---------------------------------------------------*/
 
-@media(max-width:1810px) {
-
-}
 
 @media(max-width:1600px) {
 
@@ -232,16 +248,6 @@ input.valid[type="text"]:not(.browser-default){
 }
 
 /* MAX WIDTHS: MEDIUM SCREEN---------------------------------------------------*/
-
-@media(max-width:1200px) {
-
-
-
-}
-
-@media(max-width:1056px) {
-
-}
 
 @media(max-width:993px) {
 
@@ -279,8 +285,5 @@ input.valid[type="text"]:not(.browser-default){
     .row-form {
         width: 80%;
     }
-
-
-
 
 }

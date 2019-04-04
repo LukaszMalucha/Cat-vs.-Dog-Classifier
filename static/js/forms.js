@@ -1,6 +1,9 @@
 $(function() {
     $('#upload-file-btn').click(function() {
         var form_data = new FormData($('#upload-file')[0]);
+        $('.loader').show();
+        $('#cat').hide();
+        $('#dog').hide();
         $.ajax({
             type: 'POST',
             url: '/predict',
@@ -9,8 +12,7 @@ $(function() {
             cache: false,
             processData: false,
             success: function(data) {
-                console.log(data);
-
+                $('.loader').hide();
                 if (data.guess === 'Cat') {
 
                         $('#cat').show();
