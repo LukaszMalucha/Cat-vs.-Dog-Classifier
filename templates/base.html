@@ -37,7 +37,7 @@
     <!-- TOP NAVBAR -->
     <nav class="navbar navbar-default top-navbar" role="navigation">
         <div class="navbar-header">
-            <a class="navbar-brand company-logo" href=""><img class="company-logo" src="/static/img/creolabs-white.png"
+            <a class="navbar-brand company-logo" href="{{ url_for('dashboard') }}"><img class="company-logo" src="/static/img/creolabs-white.png"
                                                               alt="Creo Labs Logo"/></a>
         </div>
         <ul class="nav navbar-top-links navbar-right">
@@ -54,15 +54,15 @@
 
     <!-- DROPDOWN -->
     <ul id="dropdown1" class="dropdown-content">
-
-        <li><a href="" id="dropdown_link"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+        {% if current_user.email != "Guest" %}
+        <li><a href="{{ url_for('userlogout') }}" id="dropdown_link"><i class="fas fa-sign-out-alt"></i> Log Out</a>
         </li>
-
-        <li><a href="" id="dropdown_link"><i class="fa fa-user fa-fw"></i> Log In</a>
+        {% else %}
+        <li><a href="{{ url_for('userlogin') }}" id="dropdown_link"><i class="fa fa-user fa-fw"></i> Log In</a>
         </li>
-        <li><a href="" id="dropdown_link"><i class="fas fa-tasks"></i> Register</a>
+        <li><a href="{{ url_for('userregister') }}" id="dropdown_link"><i class="fas fa-tasks"></i> Register</a>
         </li>
-
+        {% endif %}
     </ul>
 
     <!-- MOBILE -->
@@ -70,15 +70,15 @@
         <li><a href=""><i class="fas fa-terminal"></i> Addresses API</a></li>
         <li><a target="_blank" href="https://github.com/LukaszMalucha/Cat-vs.-Dog-Classifier/"><i
                 class="fab fa-github"></i> GitHub</a></li>
-
-        <li><a href="" id="dropdown_link"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+        {% if current_user.email != "Guest" %}
+        <li><a href="{{ url_for('userlogout') }}" id="dropdown_link"><i class="fas fa-sign-out-alt"></i> Log Out</a>
         </li>
-
-        <li><a href="" id="dropdown_link"><i class="fa fa-user fa-fw"></i> Log In</a>
+        {% else %}
+        <li><a href="{{ url_for('userlogin') }}" id="dropdown_link"><i class="fa fa-user fa-fw"></i> Log In</a>
         </li>
-        <li><a href="" id="dropdown_link"><i class="fas fa-tasks"></i> Register</a>
+        <li><a href="{{ url_for('userregister') }}" id="dropdown_link"><i class="fas fa-tasks"></i> Register</a>
         </li>
-
+        {% endif %}
     </ul>
 
     <!--/. TOP NAVBAR ****************************************************************************************************************************************************************************************** -->

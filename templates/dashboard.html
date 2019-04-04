@@ -31,8 +31,30 @@
     <div class="row row-form">
         <button id="upload-file-btn" class="btn btn-submit" type="button">Predict</button>
     </div>
-
-
 </form>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br>
+<div class="row row-form">
+    <div class="card card-prediction" id="cat">
+        <div class="card-image">
+            <img src="/static/img/cat.png">
+
+        </div>
+        <div class="card-content">
+            <p>It's a Cat</p>
+        </div>
+    </div>
+    <div class="card card-prediction" id="dog">
+        <div class="card-image">
+            <img src="/static/img/dog.png">
+
+        </div>
+        <div class="card-content">
+            <p>It's a Dog</p>
+        </div>
+    </div>
+
+            <h5 id="error">Only .jpg files allowed</h5>
+
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 {% endblock %}

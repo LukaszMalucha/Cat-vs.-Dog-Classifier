@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    background-image: url('../../static/img/nice.png');
+    background-image: url('../../static/img/background.png');
     background-size: cover
 
 }
@@ -74,6 +74,10 @@ h2 {
    margin-bottom: 10px;
 }
 
+#error {
+    color: red;
+    display:none;
+}
 
 /*------------------------------------------------------------------------------
     ROWS
@@ -119,7 +123,13 @@ h2 {
 
 }
 
-
+.card-prediction {
+    width: 40%;
+    margin: auto;
+    border: none;
+    box-shadow: none;
+    display: none;
+}
 
 /*------------------------------------------------------------------------------
     EDIT & ADD FORMS + TABLE
@@ -129,6 +139,7 @@ input[type="text"]:not(.browser-default),
 input.valid[type="text"]:not(.browser-default){
      border: 0px solid white;
      height: 2.5rem;
+     box-shadow: 0 1px 0 0 grey;
 
 }
 

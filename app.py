@@ -1,5 +1,6 @@
 ## App Utilities
 import os
+import env
 from db import db
 
 from flask_bootstrap import Bootstrap
@@ -30,7 +31,7 @@ configure_uploads(app, photos)
 
 ALLOWED_EXTENSIONS = set(['jpg'])
 
-app.config['DEBUG'] = False
+app.config['DEBUG'] = True
 api = Api(app)
 
 Bootstrap(app)
@@ -63,11 +64,10 @@ def allowed_file(filename):
 
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
-
     if request.method == 'POST' and 'file' in request.files:
 
-        img = request.files['file']
-        if allowed_file(img.filename):
+        image = request.files['file']
+        if allowed_file(image.filename):
             # clear Tensor session to avoid error
             keras.backend.clear_session()
             # load saved model
@@ -75,23 +75,25 @@ def predict():
             # prepare labels
             class_labels = {0: 'Cat', 1: 'Dog'}
             # read photo & transform it into array
-            img = imread(request.files['file'])
+            img = imread(image)
             img = resize(img, (128, 128))
             img = np.expand_dims(img, axis=0)
             if np.max(img) > 1:
                 img = img / 255.0
             # predict class
             prediction = image_classifier.predict_classes(img)
+            percent_values = prediction.tolist()
             # for website display
             guess = class_labels[prediction[0][0]]
             # clear Tensor session to avoid error
-            keras.backend.clear_session()
+            # keras.backend.clear_session()
 
             return jsonify({'guess': guess})
 
         else:
-            return render_template("dashboard.html")
-
+            return jsonify({'error': "Only .jpg files allowed"})
+    else:
+        return jsonify({'error': "Please upload a .jpg file"})
 
 ### ERROR HANDLING
 
@@ -105,6 +107,8 @@ def error404(error):
 def error500(error):
     return render_template('500.html'), 500
 
+## DB INIT
+db.init_app(app)
 
 ## APP INITIATION
 if __name__ == '__main__':
@@ -114,7 +118,7 @@ if __name__ == '__main__':
         def create_tables():
             db.create_all()
 
-    app.run(debug=True)
+    app.run()
 
 ## Heroku
 # port = int(os.environ.get('PORT', 5000))
