@@ -5,7 +5,7 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     background-image: url('../../static/img/background.png');
-    background-size: cover
+    background-size: cover;
 
 }
 
@@ -23,6 +23,7 @@ body {
     position: relative;
     top: 55px;
     padding-top:50px;
+    min-height: 800px;
 
 }
 
@@ -129,6 +130,7 @@ h2 {
     border: none;
     box-shadow: none;
     display: none;
+    background: transparent;
 }
 
 /*------------------------------------------------------------------------------
@@ -222,31 +224,9 @@ input.valid[type="text"]:not(.browser-default){
 
 @media(max-width:1600px) {
 
-
-    #page-index {
-        padding: 0;
+    .row-form {
+        width: 40%;
     }
-
-    .county-card {
-
-       top: 55px;
-
-    }
-
-
-
-    .row-table {
-        width: 70%;
-        margin-left: 30%;
-    }
-
-
-    .table-card {
-        padding: 0px;
-    }
-
-
-
 
 
 }
@@ -265,33 +245,18 @@ input.valid[type="text"]:not(.browser-default){
 
 @media(max-width:993px) {
 
-    .county-card {
-       position: relative;
-       width: 40%;
-       left: 0px;
-       top: 0px;
-
+    .row-title {
+        width:90%;
+        font-size: 1.5rem;
 
     }
 
-    .row-table {
-        width: 100%;
-        margin-left: 0px;
+    .row-cards {
+        width: 80%;
     }
 
-
-    td {
-        font-size: 1rem;
-    }
-
-    .table.dataTable thead th {
-        font-size: 1.2rem;
-    }
-
-    .dataTables_info,
-    .dataTables_filter > label,
-    .dataTables_length > label {
-        font-size: 1rem;
+    .row-form {
+        width: 50%;
     }
 
 }
@@ -299,43 +264,23 @@ input.valid[type="text"]:not(.browser-default){
 
 /* MAX WIDTHS: EXTRA-SMALL SCREEN---------------------------------------------*/
 
-@media(max-width:521px) {
+@media(max-width:522px) {
 
-
-    .form-card {
-    width: 95%;
-    margin: auto;
-    position: relative;
-    margin-bottom: 50px;
-    top: 20px;
-    left: 0px;
+    .row-title {
+        width:90%;
+        font-size: 1.5rem;
 
     }
 
-    .row-table {
+    .row-cards {
         width: 100%;
+    }
 
+    .row-form {
+        width: 80%;
     }
 
 
 
-    td {
-        font-size: 0.7rem;
-    }
-
-    .table.dataTable thead th {
-        font-size: 0.9rem;
-    }
-
-    .dataTables_info,
-    .dataTables_filter > label,
-    .dataTables_length > label {
-        font-size: 1rem;
-    }
-
-    .table.dataTable thead th,
-    .table.dataTable tbody td {
-    padding: 3px 3px !important;
-    }
 
 }

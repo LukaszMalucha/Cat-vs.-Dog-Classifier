@@ -1,6 +1,6 @@
 ## App Utilities
 import os
-import env
+# import env
 from db import db
 
 from flask_bootstrap import Bootstrap
@@ -18,8 +18,9 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['PROPAGATE_EXCEPTIONS'] = True
-photos = UploadSet('photos', IMAGES)  # image upload handling
 app.config['UPLOADED_PHOTOS_DEST'] = 'static/uploads'
+app.config['FLASKS3_BUCKET_NAME'] = os.environ.get('FLASKS3_BUCKET_NAME')
+photos = UploadSet('photos', IMAGES)  # image upload handling
 configure_uploads(app, photos)
 
 app.config['DEBUG'] = True
@@ -39,7 +40,7 @@ api.add_resource(UserLogout, '/logout')
 
 @app.route('/', methods=['GET', 'POST'])
 def dashboard():
-    """Main View"""
+    """Main Dashboard"""
     return render_template("dashboard.html")
 
 @app.route('/predict', methods=['GET', 'POST'])
@@ -84,8 +85,8 @@ if __name__ == '__main__':
         def create_tables():
             db.create_all()
 
-    app.run()
+    # app.run()
 
-## Heroku
-# port = int(os.environ.get('PORT', 5000))
-# app.run(host='0.0.0.0', port=port)
+# Heroku
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
