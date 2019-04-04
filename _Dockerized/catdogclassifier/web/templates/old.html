@@ -1,0 +1,44 @@
+{% extends 'base.html' %} {% block content %}
+<div class="card text-center" id="main_card">
+
+    <div class="row">
+        <div class="col-md-5 text-left">
+            <div class="card text-center" id="pet">
+                <img src="/static/img/cat.jpg" class="img-responsive" />
+            </div>
+            <br>
+            <br>
+            <br>
+            <h1><i class="fas fa-paw"></i> Upload your .jpg image:</h1>
+            <form method=POST enctype=multipart/form-data action="{{ url_for('upload') }}">
+                <div class="col-md-5 text-left">
+                <input type=file name=photo required >
+                </div>
+                <div class="col-md-6 text-left">
+                <input type="submit" class="waves-effect waves-light btn-large" value="Predict!">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-2 text-left">
+        </div>
+        <div class="col-md-5 text-left">
+            <h1><i class="fas fa-paw"></i> Let me predict if it's a Cat or Dog on your Image</h1>
+            <br>
+            <br>
+            <div class="card text-center" id="pet">
+                <img src="/static/img/dog.jpg" class="img-responsive" />
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+</div>
+
+{% endblock %}

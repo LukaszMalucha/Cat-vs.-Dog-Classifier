@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+
+{% block extrahead %}
+
+<link href="{{url_for('static', filename='css/forms.css')}}" rel="stylesheet"/>
+{% endblock %}
+{% block content %}
+<div class="row row-alert" style="min-height: 72px">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+
+            {% for category, message in messages %}
+            <div class="{{ category }}">
+                <div class="messages text-center">
+                    {{ message }}
+                </div>
+            </div>
+            {% endfor %}
+
+            {% endif %}
+            {% endwith %}
+        </div>
+
+
+<div class="container">
+
+    <form class="form-signin" method="POST" action="{{ url_for('userlogin') }}">
+        <i class="material-icons" id="icon-login">lock</i>
+        <fieldset class="form-box">
+            {{ form.hidden_tag() }}
+            <div class="row text-center">
+                <h4>Login User</h4>
+                {{ message }}
+            </div>
+            <div class="row plain-element">
+                <div class="input-field col s6 field-description">
+                    <h6>Your Email Address:</h6>
+                </div>
+                <div class="input-field col s6">
+                    {{ wtf.form_field(form.email)}}
+                </div>
+            </div>
+            <div class="row plain-element">
+                <div class="input-field col s6 field-description">
+                    <h6>Your Password:</h6>
+                </div>
+                <div class="input-field col s6">
+                    {{ wtf.form_field(form.password)}}
+                </div>
+            </div>
+            <div class="row plain-element">
+                <div class="input-field col s6 field-description">
+                </div>
+                <div class="input-field col s6">
+                    {{ wtf.form_field(form.remember)}}
+                </div>
+            </div>
+            <button type="submit" class="btn-login"><span>Continue <i class="far fa-arrow-alt-circle-right"></i></span>
+            </button>
+        </fieldset>
+    </form>
+</div>
+{% endblock %}

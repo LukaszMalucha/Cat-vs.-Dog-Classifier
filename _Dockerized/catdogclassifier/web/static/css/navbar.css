@@ -1,0 +1,344 @@
+/*------------------------------------------------------------------------------
+    TOP NAVBAR
+------------------------------------------------------------------------------*/
+
+.navbar {
+    border-radius: 0px;
+}
+
+
+.top-navbar .navbar-brand strong {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    color: white;
+
+}
+
+
+.top-navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 300;
+    border: none;
+    height: 60px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+
+.top-navbar .navbar-brand {
+    margin: 0px;
+    width: 100%;
+    height: 60px;
+    text-align: left;
+    padding: 6px;
+    font-weight: 700;
+    color: #1a2026;
+    background: transparent;
+
+}
+.navbar-header {
+    width: 30%;
+}
+
+.navbar-brand .company-logo {
+    height: 3.5rem;
+
+}
+
+.navbar-brand .material-icons, .navbar-brand .fab, .navbar-brand .fas {
+    float: left;
+    font-size: 26px;
+    margin-right: 5px;
+    margin-top: -2px;
+    height: auto;
+    color: white;
+}
+
+.nav > li {
+    height: 100%;
+}
+
+.nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+
+.nav-link {
+    height: 100% !important;
+    padding: 20px 15px 20px 15px !important;
+}
+
+
+.nav i, .nav i.material-icons {
+    height:20px;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.top-navbar .navbar-right {
+    width: auto;
+    height: 60px;
+    margin: 0px;
+    line-height: 1;
+    padding: 0px;
+    color: #1a2026;
+    float: right !important;
+}
+
+.top-navbar .navbar-right>a {
+    padding: 0px;
+    font-size: 15px;
+}
+
+.top-navbar .navbar-right>a>i {
+    margin-right: 5px;
+    font-size: 16px;
+    height: 60px;
+}
+
+nav ul b {
+    font-weight: bold;
+}
+
+.dropdown-content {
+    width: 150px !important;
+    right: -50px !important;
+    top: 60px !important;
+
+}
+
+.dropdown-content li>a {
+    font-size: 14px;
+    text-decoration: none;
+}
+.dropdown-content li>a>i {
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+
+.dropdown-content li>fa {
+    font-size: 16px;
+
+}
+
+
+
+
+.sidenav-trigger {
+    height: 60px !important;
+
+
+}
+
+.sidenav-trigger i {
+    font-weight: bold;
+
+}
+
+
+#trigger {
+   font-size: 24px;
+   padding: 10px 0px 10px 0px;
+}
+
+/* Hovers and Focuses --------------------------------------------------------*/
+
+.navbar-right>a:hover,
+.navbar-right>a:focus {
+    text-decoration: none;
+    outline: 0px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    background-color: transparent;
+    outline: 0px;
+}
+
+
+nav ul a:hover {
+    background-color: #fff;
+    color: #2f2f2f;
+}
+
+nav ul li:hover, nav ul li:active {
+    background: #2f2f2f;
+}
+
+.sidenav li:hover {
+     background: #2f2f2f;
+}
+
+/*------------------------------------------------------------------------------
+    Colors
+------------------------------------------------------------------------------*/
+
+.top-navbar {
+    background: #191919;
+    box-shadow: none;
+    border: none;
+}
+
+.navbar-brand .material-icons {
+    color: white;
+}
+
+nav ul a {
+    color: white;
+}
+
+.dropdown-content {
+    background-color: white;
+}
+
+.dropdown-content li>a {
+    color: white;
+    background-color: #191919;
+}
+
+.dropdown-content li>fa {
+    color: #191919;
+}
+
+
+.navbar-right>a:hover,
+.navbar-right>a:focus {
+    background: transparent;
+    color: #e5ebef;
+}
+
+.navbar-default .navbar-brand:hover
+.navbar-default .navbar-brand:focus {
+    color: #e5ebef;
+}
+
+ nav ul a:hover {
+     color: #191919;
+ }
+
+.nav > li > a:hover,
+ .nav > li > a:focus,
+ .nav > li > a:active{
+    background-color: transparent;
+    color: white;
+}
+
+ .navbar-default .navbar-brand:hover {
+    color: #e5ebef;
+ }
+
+.sidenav {
+    background: #191919;
+}
+
+.sidenav li > a {
+    color: white
+}
+
+.sidenav li > a > i {
+    color: white;
+}
+
+
+/*------------------------------------------------------------------------------
+    MEDIA QUERIES
+------------------------------------------------------------------------------*/
+
+
+@media(max-width:1600px) {
+    .top-navbar {
+        padding-left: 2%;
+        padding-right: 1%;
+    }
+
+    .navbar-header {
+        width:35%;
+    }
+
+}
+
+@media(min-width:992px) {
+
+    .sidenav-trigger {
+        display: none !important;
+    }
+}
+@media(max-width:992px) {
+    .top-navbar {
+        margin: 0px;
+        padding:0px;
+    }
+
+    .top-navbar .navbar-brand {
+        width: 280px;
+        font-size:  2rem;
+        padding: 20px;
+    }
+
+    .top-navbar .navbar-brand strong {
+        font-size: 20px;
+    }
+
+    .navbar-brand i.large.material-icons {
+        font-size: 40px;
+    }
+
+
+    .dropdown-content {
+        margin-top: -10px;
+    }
+
+    .nav-link {
+        display: none !important;
+    }
+
+    .navbar-header {
+    width: 70%;
+    }
+    nav a.sidenav-trigger {
+        line-height: 1;
+    }
+
+    nav a.sidenav-trigger i {
+    height: 60px;
+    line-height: 1;
+    }
+
+    #trigger {
+        margin: 10px 0px 10px 0px;
+    }
+
+}
+
+
+@media(max-width:415px) {
+
+    .top-navbar .navbar-brand {
+        height: 60px;
+        width: 100%;
+        font-size:  2rem;
+        padding: 20px;
+
+
+    }
+    .navbar-brand i.large.material-icons {
+        font-size:  2rem;
+
+    }
+
+    .top-navbar .navbar-right {
+        position: relative;
+        top: -60px;
+    }
+
+
+}
+
+

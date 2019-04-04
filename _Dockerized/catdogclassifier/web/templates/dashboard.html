@@ -1,0 +1,58 @@
+{% extends 'base.html' %} {% block content %}
+
+
+<div class="row row-title">
+    <i class="fas fa-paw"></i>&nbsp;&nbsp; Let me predict if it's a Cat or Dog on your Image
+</div>
+<br>
+<div class="row row-cards">
+    <div class="col-xs-6 col-sm-6 col-md-6 text-center">
+        <img src="{{url_for('static', filename='img/cat.jpg')}}" class="img-responsive img-pet"/>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 text-center">
+        <img src="{{url_for('static', filename='img/dog.jpg')}}" class="img-responsive img-pet"/>
+    </div>
+</div>
+<br>
+<form id="upload-file" method="POST" enctype="multipart/form-data">
+    <div class="row row-form">
+        <div class="file-field input-field">
+            <div class="btn btn-file">
+                <span>File</span>
+                <input type="file" name="file" multiple>
+            </div>
+            <div class="file-path-wrapper">
+                <input class="file-path validate" type="text" placeholder="Upload your .jpg image file">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row row-form">
+        <button id="upload-file-btn" class="btn btn-submit" type="button">Predict</button>
+    </div>
+</form>
+<br>
+<div class="row row-form">
+    <div class="card card-prediction" id="cat">
+        <div class="card-image">
+            <img src="/static/img/cat.png">
+
+        </div>
+        <div class="card-content">
+            <h5>It's a Cat</h5>
+        </div>
+    </div>
+    <div class="card card-prediction" id="dog">
+        <div class="card-image">
+            <img src="/static/img/dog.png">
+
+        </div>
+        <div class="card-content">
+            <h5>It's a Dog</h5>
+        </div>
+    </div>
+    <h5 id="error">Only .jpg files allowed</h5>
+     <div class="loader"></div>
+</div>
+
+{% endblock %}

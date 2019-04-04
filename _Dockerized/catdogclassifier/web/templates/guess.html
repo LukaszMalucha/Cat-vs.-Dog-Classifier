@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block content %}
+<div class="card text-center" id="main_card">
+    <h1>I predict it's a {{ guess }}</h1>
+    <br><br><br><br><br>
+    <div class="row">
+        <div class="row text-center">
+
+            <div class=" col-md-5 text-left"></div>
+            <div class="col-md-2 text-center">
+                <a href="{{ url_for('dashboard') }}" class="waves-effect waves-light btn-large" style="margin: 0 auto;"id="add">Main Page</a>
+            </div>
+            <div class=" col-md-5 text-left"></div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

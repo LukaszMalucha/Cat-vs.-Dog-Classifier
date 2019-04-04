@@ -1,0 +1,289 @@
+/*------------------------------------------------------------------------------
+    MAIN  STYLES    
+------------------------------------------------------------------------------*/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url('../../static/img/background.png');
+    background-size: cover;
+
+}
+
+
+#wrapper {
+    width: 100%;
+
+}
+
+
+#page-index {
+    width: 100%;
+    display: block;
+    overflow: auto;
+    position: relative;
+    top: 55px;
+    padding-top:50px;
+    min-height: 800px;
+
+}
+
+#page-index a {
+    text-decoration: none;
+    outline: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+#text {
+    color: black;
+}
+
+
+label {
+    margin-left: 30px;
+    font-weight: normal;
+    color: black;
+    font-size: 12px;
+}
+
+.no-padding-left {
+    padding-left: 0px !important;
+}
+
+h2 {
+    color: black;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.plain-element {
+    margin:0px;
+    padding: 0px;
+}
+
+.warning {
+    color: red;
+}
+
+
+.box {
+   display: flex;
+   align-items:center;
+   margin-bottom: 10px;
+}
+
+#error {
+    color: red;
+    display:none;
+}
+
+/*------------------------------------------------------------------------------
+    ROWS
+------------------------------------------------------------------------------*/
+
+.row-alert {
+    min-height: 72px;
+}
+
+
+.row-title {
+    width: 100%;
+    color: #181818;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+
+.row-cards {
+    width: 50%;
+    text-align: center;
+}
+
+.row-form {
+    width: 20%;
+    text-align: center;
+}
+
+
+
+/*------------------------------------------------------------------------------
+    DASHBOARD CARDS    
+------------------------------------------------------------------------------*/
+
+
+.img-pet {
+    width:80%;
+    margin: auto;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+.card-prediction {
+    width: 40%;
+    margin: auto;
+    border: none;
+    box-shadow: none;
+    display: none;
+    background: transparent;
+}
+
+/*------------------------------------------------------------------------------
+    EDIT & ADD FORMS + TABLE
+------------------------------------------------------------------------------*/
+
+input[type="text"]:not(.browser-default),
+input.valid[type="text"]:not(.browser-default){
+     border: 0px solid white;
+     height: 2.5rem;
+     box-shadow: 0 1px 0 0 grey;
+
+}
+
+::placeholder {
+    color: #191919;
+}
+
+/*------------------------------------------------------------------------------
+    BUTTONS
+------------------------------------------------------------------------------*/
+
+
+.btn-submit {
+    width: 50%;
+    height: 3rem;
+    border-radius: 5px;
+    border-color: transparent;
+    text-align: center;
+    color: white;
+    background-color: #165d81;
+    font-size: 1.2rem;
+}
+
+.btn-submit:hover, .btn-submit:active, .btn-submit:focus {
+    background-color: #0f415a;
+    color: white;
+}
+
+.btn-file {
+    width: 20%;
+    height: 2.5rem !important;
+    line-height: 2.5rem !important;
+    border-color: transparent;
+    text-align: center;
+    color: white;
+    background-color:  #C0C0C0;
+    font-size: 16px;
+}
+
+.btn-file:hover, .btn-file:active, .btn-file:focus {
+    background-color:  #A9A9A9;
+    color: white;
+}
+
+
+
+/*------------------------------------------------------------------------------
+    FOOTER
+------------------------------------------------------------------------------*/
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #181818;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 15px;
+    color: #fff;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+/*------------------------------------------------------------------------------
+    ANIMATIONS
+    CREDITS : "https://codepen.io/psyonline/pen/yayYWg"
+------------------------------------------------------------------------------*/
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #8c8c8c;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  animation: spin 1.5s linear infinite;
+  margin: auto;
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/*------------------------------------------------------------------------------
+    MEDIA QUERIES     
+------------------------------------------------------------------------------*/
+
+
+/* MAX WIDTHS: LARGE SCREEN---------------------------------------------------*/
+
+
+@media(max-width:1600px) {
+
+    .row-form {
+        width: 40%;
+    }
+
+
+}
+
+/* MAX WIDTHS: MEDIUM SCREEN---------------------------------------------------*/
+
+@media(max-width:993px) {
+
+    .row-title {
+        width:90%;
+        font-size: 1.5rem;
+
+    }
+
+    .row-cards {
+        width: 80%;
+    }
+
+    .row-form {
+        width: 50%;
+    }
+
+}
+
+
+/* MAX WIDTHS: EXTRA-SMALL SCREEN---------------------------------------------*/
+
+@media(max-width:522px) {
+
+    .row-title {
+        width:90%;
+        font-size: 1.5rem;
+
+    }
+
+    .row-cards {
+        width: 100%;
+    }
+
+    .row-form {
+        width: 80%;
+    }
+
+}

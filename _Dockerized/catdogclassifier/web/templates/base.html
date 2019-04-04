@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cat vs Dog Classifier</title>
+    <!-- Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- FontAwesome Styles-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+          integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <!-- Custom Styles-->
+    <link href="{{url_for('static', filename='css/custom-styles.css')}}" rel="stylesheet"/>
+    <link href="{{url_for('static', filename='css/navbar.css')}}" rel="stylesheet"/>
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+
+    {% block extrahead %}{% endblock %} {% block head_js %} {% endblock head_js %}
+
+</head>
+
+<body>
+<!-- WRAPPER -->
+<div id="wrapper">
+
+
+    <!-- TOP NAVBAR -->
+    <nav class="navbar navbar-default top-navbar" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand company-logo" href="{{ url_for('dashboard') }}"><img class="company-logo" src="/static/img/creolabs-white.png"
+                                                              alt="Creo Labs Logo"/></a>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+            <li><a class="nav-link" target="_blank" href="https://github.com/LukaszMalucha/Cat-vs.-Dog-Classifier/"><i
+                    class="fab fa-github"></i> <b> GitHub</b></a></li>
+            <li><a class='dropdown-trigger nav-link' href='#' data-target='dropdown1' id="user_dropdown"><i
+                    class="fas fa-caret-down"></i><b>{{ current_user.email }} </b></a></li>
+            <li><a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" id="trigger">menu</i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- DROPDOWN -->
+    <ul id="dropdown1" class="dropdown-content">
+        {% if current_user.email != "Guest" %}
+        <li><a href="{{ url_for('userlogout') }}" id="dropdown_link"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+        </li>
+        {% else %}
+        <li><a href="{{ url_for('userlogin') }}" id="dropdown_link"><i class="fa fa-user fa-fw"></i> Log In</a>
+        </li>
+        <li><a href="{{ url_for('userregister') }}" id="dropdown_link"><i class="fas fa-tasks"></i> Register</a>
+        </li>
+        {% endif %}
+    </ul>
+
+    <!-- MOBILE -->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a target="_blank" href="https://github.com/LukaszMalucha/Cat-vs.-Dog-Classifier/"><i
+                class="fab fa-github"></i> GitHub</a></li>
+        {% if current_user.email != "Guest" %}
+        <li><a href="{{ url_for('userlogout') }}" id="dropdown_link"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+        </li>
+        {% else %}
+        <li><a href="{{ url_for('userlogin') }}" id="dropdown_link"><i class="fa fa-user fa-fw"></i> Log In</a>
+        </li>
+        <li><a href="{{ url_for('userregister') }}" id="dropdown_link"><i class="fas fa-tasks"></i> Register</a>
+        </li>
+        {% endif %}
+    </ul>
+
+    <!--/. TOP NAVBAR ****************************************************************************************************************************************************************************************** -->
+
+    <div id="page-index">
+
+
+        {% block content %} {% endblock %}
+
+    </div>
+
+
+</div>
+
+<div class="footer">
+    <p> Powered by CreoLabs &trade;</p>
+</div>
+
+<!-- jQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Bootstrap Js -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+<!-- Materialize Js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<!-- Custom Js -->
+<script src="{{url_for('static', filename='js/custom-scripts.js')}}"></script>
+<script src="{{url_for('static', filename='js/forms.js')}}"></script>
+
+</body>
+
+</html>
