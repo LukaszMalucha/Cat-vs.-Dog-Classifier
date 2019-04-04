@@ -128,6 +128,7 @@ h2 {
 input[type="text"]:not(.browser-default),
 input.valid[type="text"]:not(.browser-default){
      border: 0px solid white;
+     height: 2.5rem;
 
 }
 
@@ -142,13 +143,13 @@ input.valid[type="text"]:not(.browser-default){
 
 .btn-submit {
     width: 50%;
-    height: 50px;
+    height: 3rem;
     border-radius: 5px;
     border-color: transparent;
     text-align: center;
     color: white;
     background-color: #165d81;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 .btn-submit:hover, .btn-submit:active, .btn-submit:focus {
@@ -158,8 +159,8 @@ input.valid[type="text"]:not(.browser-default){
 
 .btn-file {
     width: 20%;
-    height: 20px;
-
+    height: 2.5rem !important;
+    line-height: 2.5rem !important;
     border-color: transparent;
     text-align: center;
     color: white;

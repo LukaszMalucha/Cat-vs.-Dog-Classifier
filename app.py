@@ -61,8 +61,8 @@ def allowed_file(filename):
 ### TEST PHOTO
 
 
-@app.route('/upload', methods=['GET', 'POST'])
-def upload():
+@app.route('/predict', methods=['GET', 'POST'])
+def predict():
 
     if request.method == 'POST' and 'file' in request.files:
 

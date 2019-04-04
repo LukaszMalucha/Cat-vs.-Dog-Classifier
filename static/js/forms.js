@@ -3,7 +3,7 @@ $(function() {
         var form_data = new FormData($('#upload-file')[0]);
         $.ajax({
             type: 'POST',
-            url: '/upload',
+            url: '/predict',
             data: form_data,
             contentType: false,
             cache: false,
