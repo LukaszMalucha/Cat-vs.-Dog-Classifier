@@ -210,7 +210,6 @@ input.valid[type="text"]:not(.browser-default){
 
 /*------------------------------------------------------------------------------
     ANIMATIONS
-    CREDITS : "https://codepen.io/psyonline/pen/yayYWg"
 ------------------------------------------------------------------------------*/
 
 .loader {
@@ -238,12 +237,15 @@ input.valid[type="text"]:not(.browser-default){
 /* MAX WIDTHS: LARGE SCREEN---------------------------------------------------*/
 
 
-@media(max-width:1600px) {
+@media(max-width:1700px) {
 
     .row-form {
         width: 40%;
     }
 
+    .btn-submit {
+        width: 30%;
+    }
 
 }
 
