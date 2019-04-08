@@ -267,6 +267,10 @@ input.valid[type="text"]:not(.browser-default){
         width: 50%;
     }
 
+    .btn-submit {
+        width: 60%;
+    }
+
 }
 
 
@@ -287,5 +291,7 @@ input.valid[type="text"]:not(.browser-default){
     .row-form {
         width: 80%;
     }
+
+
 
 }
