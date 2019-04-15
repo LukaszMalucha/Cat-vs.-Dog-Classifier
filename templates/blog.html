@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block extrahead %}
+<link href="{{url_for('static', filename='css/blog.css')}}" rel="stylesheet"/>
+
+{% endblock %}
+{% block content %}
+
+<div class="dashboard-cards">
+    {% for element in blog_list %}
+    <div class="row row-title">
+        <h3>{{ element.title }} </h3>
+        <p><i class="fab fa-python"></i>&nbsp; Updated on {{element.date}}</p>
+        <span>
+            {% for keyword in element.keywords %}
+            <b class="keyword"> {{ keyword }}</b>
+            {% endfor %}
+        </span>
+    </div>
+    <div class="row row-cards">
+        <div class="col-md-3 plain-element">
+            <img class="img-blog img-responsive" src="{{ element.img }}" alt="App Image"/>
+        </div>
+        <div class="col-md-8 plain-element">
+                <div class="card card-transparent">
+                    <p>{{ element.content }}</p>
+                    <a target="_blank" href="{{ element.link }}"><i class="fab fa-github"></i> GitHub Repository</a>
+                </div>
+        </div>
+    </div>
+
+    {% endfor %}
+    <div class="row row-cards"></div>
+    <div class="row row-cards"></div>
+    <div class="row row-cards"></div>
+</div>
+
+
+
+{% endblock %}
+

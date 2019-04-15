@@ -1,0 +1,151 @@
+
+
+/*------------------------------------------------------------------------------
+    ROWS
+------------------------------------------------------------------------------*/
+
+.dashboard-cards {
+    width: 90%;
+    margin: auto;
+}
+
+
+
+.row-alert {
+    min-height: 72px;
+}
+
+
+.row-title {
+    width: 70%;
+    margin: auto;
+    text-align: left;
+
+}
+
+
+.row-title h3 {
+    font-size: 30px;
+    font-weight: 800;
+    color: black;
+    text-shadow: 1px 1px #d1d1d1;
+}
+
+.row-title p {
+    color: #868e96;
+    font-size: 12px;
+    text-shadow: 1px 1px #eaeaea;
+}
+
+
+.row-cards {
+    width: 75%;
+    text-align: center;
+    margin-top: 2%;
+
+}
+
+.row-form {
+    width: 20%;
+    text-align: center;
+}
+
+
+
+
+/*------------------------------------------------------------------------------
+    ROWS
+------------------------------------------------------------------------------*/
+
+.dashboard-cards {
+    width: 90%;
+    margin: auto;
+}
+
+
+
+.row-title {
+    width: 70%;
+    margin: auto;
+    text-align: left;
+
+}
+
+
+.row-title h3 {
+    font-size: 30px;
+    font-weight: 800;
+    color: black;
+    text-shadow: 1px 1px #d1d1d1;
+}
+
+.row-title p {
+    color: #868e96;
+    font-size: 12px;
+    text-shadow: 1px 1px #eaeaea;
+}
+
+
+.row-cards {
+    width: 70%;
+    display: table;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px #eaeaea;
+}
+
+
+
+.col {
+    display: table-cell;
+}
+
+
+
+/*------------------------------------------------------------------------------
+    DASHBOARD CARDS
+------------------------------------------------------------------------------*/
+
+
+.card-transparent {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    text-align: left;
+    width: 100%;
+    margin: auto;
+    color: black;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px #d1d1d1;
+
+}
+
+.card-transparent a {
+    font-size: 14px;
+    color: #0366d6;
+    font-weight: 600;
+
+}
+
+.keyword {
+    background-color: #f1f8ff;
+    color: #0366d6;
+    margin: 0 .5em .5em 0;
+    padding: .3em .9em;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.keyword:hover {
+    background-color: #def;
+}
+
+/*------------------------------------------------------------------------------
+    IMAGES
+------------------------------------------------------------------------------*/
+
+.img-blog {
+    width: 90%;
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
+
+}

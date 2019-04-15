@@ -3,7 +3,7 @@
 ------------------------------------------------------------------------------*/
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Jura', sans-serif;
     background-image: url('../../static/img/background.png');
     background-size: cover;
 
@@ -133,6 +133,10 @@ h2 {
     background: transparent;
 }
 
+.card .card-content {
+    padding: 12px;
+}
+
 /*------------------------------------------------------------------------------
     EDIT & ADD FORMS + TABLE
 ------------------------------------------------------------------------------*/
@@ -142,6 +146,7 @@ input.valid[type="text"]:not(.browser-default){
      border: 0px solid white;
      height: 2.5rem;
      box-shadow: 0 1px 0 0 grey;
+     font-family: 'Jura', sans-serif;
 
 }
 
@@ -163,6 +168,7 @@ input.valid[type="text"]:not(.browser-default){
     color: white;
     background-color: #165d81;
     font-size: 1.2rem;
+    font-family: 'Jura', sans-serif;
 }
 
 .btn-submit:hover, .btn-submit:active, .btn-submit:focus {
@@ -179,6 +185,7 @@ input.valid[type="text"]:not(.browser-default){
     color: white;
     background-color:  #C0C0C0;
     font-size: 16px;
+    font-family: 'Jura', sans-serif;
 }
 
 .btn-file:hover, .btn-file:active, .btn-file:focus {

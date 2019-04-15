@@ -10,6 +10,7 @@ from flask_uploads import UploadSet, configure_uploads, IMAGES
 
 from resources.user import UserRegister, UserLogin, UserLogout, login_manager
 from resources.utils import allowed_file, image_classification
+from resources.blog_posts import blog_posts
 
 ## App Settings
 
@@ -60,6 +61,12 @@ def predict():
     else:
         return jsonify({'error': "Please upload a .jpg file"})
 
+@app.route('/blog')
+def blog():
+    """Blog"""
+    blog_list = blog_posts[::-1]
+    return render_template("blog.html", blog_list=blog_list)
+
 
 ### ERROR HANDLING
 
@@ -85,8 +92,8 @@ if __name__ == '__main__':
         def create_tables():
             db.create_all()
 
-    # app.run()
+    app.run()
 
 # Heroku
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+#     port = int(os.environ.get('PORT', 5000))
+#     app.run(host='0.0.0.0', port=port)
