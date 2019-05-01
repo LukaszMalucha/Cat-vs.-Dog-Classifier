@@ -1,7 +1,7 @@
 # Cat vs. Dog Image Classifier
 
 
-#### [Visit the App](https://dogcatclassifier1.herokuapp.com/)
+#### [Visit the App](https://dogcatclassifier.herokuapp.com/)
 
 
 <br>
