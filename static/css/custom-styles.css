@@ -2,6 +2,17 @@
     MAIN  STYLES    
 ------------------------------------------------------------------------------*/
 
+@font-face {
+    font-family: 'Jura';
+    font-weight: 400 500;
+    src: url('/static/fonts/TTF/Jura-Medium.otf');
+}
+@font-face {
+    font-family: 'Jura';
+    font-weight: bold 600;
+    src: url('/static/fonts/TTF/Jura-DemiBold.otf');
+}
+
 body {
     font-family: 'Jura', sans-serif;
     background-image: url('../../static/img/background.png');
