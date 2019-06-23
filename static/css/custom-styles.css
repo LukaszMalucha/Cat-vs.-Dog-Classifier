@@ -91,6 +91,10 @@ h2 {
     display:none;
 }
 
+
+
+
+
 /*------------------------------------------------------------------------------
     ROWS
 ------------------------------------------------------------------------------*/
@@ -120,91 +124,133 @@ h2 {
 }
 
 
-
-/*------------------------------------------------------------------------------
-    DASHBOARD CARDS    
-------------------------------------------------------------------------------*/
-
-
-.img-pet {
-    width:80%;
+.dashboard-cards {
+    width: 60%;
     margin: auto;
-    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
-
 }
 
-.card-prediction {
-    width: 40%;
+.row-title {
+    width: 100%;
     margin: auto;
-    border: none;
-    box-shadow: none;
-    display: none;
-    background: transparent;
-}
-
-.card .card-content {
-    padding: 12px;
-}
-
-/*------------------------------------------------------------------------------
-    EDIT & ADD FORMS + TABLE
-------------------------------------------------------------------------------*/
-
-input[type="text"]:not(.browser-default),
-input.valid[type="text"]:not(.browser-default){
-     border: 0px solid white;
-     height: 2.5rem;
-     box-shadow: 0 1px 0 0 grey;
-     font-family: 'Jura', sans-serif;
+    text-align: center;
 
 }
 
-::placeholder {
-    color: #191919;
-}
-
-/*------------------------------------------------------------------------------
-    BUTTONS
-------------------------------------------------------------------------------*/
-
-
-.btn-submit {
+.row-form-s6 {
     width: 50%;
-    height: 3rem;
-    border-radius: 5px;
-    border-color: transparent;
+    margin: auto;
+}
+
+.row-form-s3 {
+    width: 25%;
+    margin: auto;
+}
+
+
+.row-title h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1%;
+    margin-top: 0;
+}
+
+.row-title p {
+    color: #657786;
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+
+.row-cards {
+    width: 100%;
     text-align: center;
-    color: white;
-    background-color: #165d81;
-    font-size: 1.2rem;
-    font-family: 'Jura', sans-serif;
+    margin-top: 6px;
+    margin-bottom: 3%;
 }
 
-.btn-submit:hover, .btn-submit:active, .btn-submit:focus {
-    background-color: #0f415a;
-    color: white;
-}
+.row-blue {
+    padding: 2%;
+    background: #1da1f2;
 
-.btn-file {
-    width: 20%;
-    height: 2.5rem !important;
-    line-height: 2.5rem !important;
-    border-color: transparent;
-    text-align: center;
-    color: white;
-    background-color:  #C0C0C0;
-    font-size: 16px;
-    font-family: 'Jura', sans-serif;
-}
-
-.btn-file:hover, .btn-file:active, .btn-file:focus {
-    background-color:  #A9A9A9;
-    color: white;
 }
 
 
+.row-side-blue {
+    height: 95px;
+    min-height: 95px;
+    margin: 0;
+    background: #1da1f2;
+    border: none;
+
+
+}
+
+.row-description {
+    margin: 0px;
+}
+
+.row-description p {
+    color: #657786;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    font-weight: 300;
+    z-index: 5;
+}
+
+.row-trend {
+    margin-bottom: 0px;
+    height: 40px;
+
+}
+
+.row-side-trend {
+    margin-bottom: 0px;
+    height: 40px;
+}
+
+.row-button {
+    margin: 3%;
+}
+
+
+.row-visit {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6ecf0;
+}
+
+#tweetColumn {
+    max-height: 490px;
+    overflow: auto;
+}
+
+#tweetColumnLong {
+    max-height: 690px;
+    overflow: auto;
+}
+
+
+.row-break {
+    height: 1px;
+}
+
+
+.hashtag-column {
+    position: relative;
+    top: -30px;
+}
+
+.hashtag-icon {
+    font-size: 35px;
+    color: #fff;
+    background: #1da1f2;
+    padding: 15px 17px 15px 17px;
+    border: 1px solid #A4D9F9;
+    border-radius: 50px;
+
+}
 /*------------------------------------------------------------------------------
     FOOTER
 ------------------------------------------------------------------------------*/

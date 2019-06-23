@@ -7,8 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Search Engine Meta-->
     <title>Cat Dog Image Classifier</title>
-    <meta name="Description" content="Image classifier trained to distinct between cats and dogs images. Convolutional Neural Network was built with Keras & Tensorflow(GPU).">
-    <meta name="KeyWords" content="machine learning, blockchain, deep learning, keras, tensorflow, artificial intelligence">
+    <meta name="Description"
+          content="Image classifier trained to distinct between cats and dogs images. Convolutional Neural Network was built with Keras & Tensorflow(GPU).">
+    <meta name="KeyWords"
+          content="machine learning, blockchain, deep learning, keras, tensorflow, artificial intelligence">
     <link rel="shortcut icon" type="image/png" href="{{url_for('static', filename='img/septellar.png')}}"/>
     <!-- Material Icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -23,13 +25,13 @@
     <!-- Custom Styles-->
     <link href="{{url_for('static', filename='css/custom-styles.css')}}" rel="stylesheet"/>
     <link href="{{url_for('static', filename='css/navbar.css')}}" rel="stylesheet"/>
+    <link href="{{url_for('static', filename='css/data.css')}}" rel="stylesheet"/>
     <!-- Fonts-->
     <style>
 
     </style>
 
     {% block extrahead %}{% endblock %} {% block head_js %} {% endblock head_js %}
-
 
 
 </head>
@@ -42,11 +44,13 @@
     <!-- TOP NAVBAR -->
     <nav class="navbar navbar-default top-navbar" role="navigation">
         <div class="navbar-header">
-            <a class="navbar-brand company-logo" href="{{ url_for('dashboard') }}"><img class="company-logo" src="/static/img/logo-white.png"
-                                                              alt="Logo"/></a>
+            <a class="navbar-brand company-logo" href="{{ url_for('dashboard') }}"><img class="company-logo"
+                                                                                        src="/static/img/logo-white.png"
+                                                                                        alt="Logo"/></a>
         </div>
         <ul class="nav navbar-top-links navbar-right">
-            <li><a class="nav-link" href="{{ url_for('blog') }}"><i class="fas fa-terminal"></i><b> Code Blog</b></a></li>
+            <li><a class="nav-link" href="{{ url_for('blog') }}"><i class="fas fa-terminal"></i><b> Code Blog</b></a>
+            </li>
             <li><a class="nav-link" target="_blank" href="https://github.com/LukaszMalucha/Cat-vs.-Dog-Classifier/"><i
                     class="fab fa-github"></i> <b> GitHub</b></a></li>
             <li><a class='dropdown-trigger nav-link' href='#' data-target='dropdown1' id="user_dropdown"><i
@@ -90,13 +94,49 @@
     <div id="page-index">
 
 
-        {% block content %} {% endblock %}
+        <div class="dashboard-cards">
+            <div class="row plain-element">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-push-3 col-md-push-3 col-lg-push-3 plain-element">
+                    {% block content %} {% endblock %}
+                </div>
 
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-sm-pull-6 col-md-pull-6 col-lg-pull-6 col-lg-pull-6 plain-element">
+                    <div class="row plain-element">
+                        <div class="card card-side">
+                            <div class="row row-side-blue"></div>
+                            <div class="row row-description">
+                                <div class="col-sm-4 col-md-4 plain-element text-center hashtag-column">
+                                    <i class="fas fa-hashtag hashtag-icon"></i>
+                                </div>
+                                <div class="col-sm-8 col-md-8 plain-element col-features">
+                                    <h1>Twitter API Features</h1>
+                                    <p> Choose between API functions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 plain-element">
+                    <div class="row plain-element">
+                        <div class="card card-side">
+                            <div class="row row-side-blue"></div>
+                            <div class="row row-description">
+                                <div class="col-sm-4 col-md-4 plain-element text-center hashtag-column">
+                                    <i class="fas fa-hashtag hashtag-icon"></i>
+                                </div>
+                                <div class="col-sm-8 col-md-8 plain-element col-features">
+                                    <h1>Twitter API Features</h1>
+                                    <p> Choose between API functions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
-
-
 </div>
-
 <div class="footer">
     <p><a target="_blank"
           href="https://www.freeprivacypolicy.com/privacy/view/9b972ff9a2aaeda03f07216c15625791/">Privacy
