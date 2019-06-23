@@ -205,7 +205,6 @@ input.valid[type="text"]:not(.browser-default){
 }
 
 
-
 /*------------------------------------------------------------------------------
     FOOTER
 ------------------------------------------------------------------------------*/
@@ -220,10 +219,21 @@ input.valid[type="text"]:not(.browser-default){
 
 .footer p {
     margin: 0;
-    font-size: 15px;
+    font-size: 12px;
     color: #fff;
     padding: 15px 0px;
     text-align: center;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover,
+.footer a:focus,
+.footer a:active {
+    color: #4f84ae;
+    text-decoration: none;
 }
 
 /*------------------------------------------------------------------------------
