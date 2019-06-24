@@ -91,7 +91,9 @@ h2 {
 }
 
 
-
+.img-icon {
+    border-radius: 50%;
+}
 
 
 /*------------------------------------------------------------------------------
@@ -118,7 +120,7 @@ h2 {
 }
 
 .row-form {
-    width: 20%;
+    width: 70%;
     text-align: center;
 }
 
@@ -324,7 +326,7 @@ h2 {
 
 /* MAX WIDTHS: MEDIUM SCREEN---------------------------------------------------*/
 
-@media(max-width:993px) {
+@media(max-width:1440px) {
 
     .row-title {
         width:90%;
@@ -344,7 +346,39 @@ h2 {
         width: 60%;
     }
 
+    .img-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+
 }
+/* MAX WIDTHS: MEDIUM SCREEN---------------------------------------------------*/
+
+@media(max-width:993px) {
+
+    .dashboard-cards {
+        width: 100%;
+    }
+
+    .btn-visit {
+        font-size: 9px;
+    }
+
+
+
+    .row-description p {
+        font-size: 0.7rem;
+    }
+
+
+    .img-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+}
+
 
 
 /* MAX WIDTHS: EXTRA-SMALL SCREEN---------------------------------------------*/
@@ -363,6 +397,11 @@ h2 {
 
     .row-form {
         width: 80%;
+    }
+
+    .img-icon {
+        width: 48px;
+        height: 48px;
     }
 
 

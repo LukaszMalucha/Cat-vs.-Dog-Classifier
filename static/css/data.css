@@ -80,6 +80,51 @@
 }
 
 
+.card-projects {
+    padding: 15px;
+    width: 94%;
+    margin: auto;
+    margin-bottom: 5px;
+    text-align: left;
+    border: 1px solid #e6ecf0;
+    border: none;
+}
+
+
+
+.card-projects h1 {
+    font-size: 1rem;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: #14171a;
+    font-weight: 600;
+}
+
+.card-projects .card-content {
+    padding: 15px;
+    padding-top: 0px;
+    padding-bottom: 12px;
+    margin-top: 0px;
+    color: #1DA1F2;
+    font-weight: 500;
+    font-size: 0.8rem;
+    max-height: 700px;
+    overflow: auto;
+
+}
+
+.card-projects p {
+    color: #252b30;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    font-weight: 600;
+    z-index: 5;
+}
+
+.card-projects .span-trend {
+    color: #7f7f7f;
+    border: none;
+}
 
 
 
@@ -147,4 +192,171 @@ input.valid[type="text"]:not(.browser-default){
 .btn-file:hover, .btn-file:active, .btn-file:focus {
     background-color:  #A9A9A9;
     color: white;
+}
+
+
+.btn-visit {
+    color: #1DA1F2;
+    background: #ffff;
+    border-radius: 20px;
+    border: 1px solid #1DA1F2;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 16px;
+    padding: 4px 12px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 0;
+    text-transform: none;
+}
+.btn-visit:hover,
+.btn-visit:active,
+.btn-visit:focus {
+    background: #e8f5fd;
+}
+
+/*------------------------------------------------------------------------------
+    MEDIA QUERIES
+------------------------------------------------------------------------------*/
+
+
+/* MAX WIDTHS: LARGE SCREEN---------------------------------------------------*/
+
+
+@media(max-width:1700px) {
+
+    .dashboard-cards {
+        width: 80%;
+    }
+
+    .card-data {
+        min-height: 400px;
+        overflow: auto;
+    }
+
+    .card-data-short {
+        min-height: 100px;
+    }
+
+    .card-side h1 {
+        font-size: 0.9rem;
+    }
+
+    .hashtag-icon {
+        font-size: 32px;
+        color: #fff;
+        background: #1da1f2;
+        padding: 15px 17px 15px 17px;
+        border: 1px solid #A4D9F9;
+        border-radius: 50px;
+    }
+
+    .card-side .card-content {
+        padding-bottom: 1px;
+    }
+
+    .img-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .card-projects p {
+        font-size: 0.8rem;
+    }
+
+
+
+    .btn-visit {
+        font-size: 9px;
+        padding: 2px 12px;
+    }
+
+
+    .card-side .card-content {
+        padding-bottom: 4px;
+    }
+
+    .row-break {
+        height: 10px;
+    }
+
+    .card-menu p {
+        font-size: 0.7rem;
+    }
+
+
+}
+
+
+
+/* MAX WIDTHS: MEDIUM SCREEN---------------------------------------------------*/
+
+@media(max-width:1024px) {
+    .dashboard-cards {
+        width: 100%;
+    }
+
+    .btn-visit {
+        font-size: 9px;
+    }
+
+
+    .card-side h1 {
+        font-size: 0.9rem;
+    }
+
+    .card-side .card-content {
+        padding-bottom: 11px;
+    }
+
+    .img-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .card-projects p {
+    font-size: 0.76rem;
+    }
+
+
+
+}
+
+
+/* MAX WIDTHS: EXTRA-SMALL SCREEN---------------------------------------------*/
+
+@media(max-width:522px) {
+
+    .dashboard-cards {
+        width: 95%;
+        margin-bottom: 80px;
+    }
+
+    #activeTrendsColumn {
+        display: none;
+    }
+
+    .card-projects,
+    .card-side {
+        width: 98%;
+    }
+
+    .card-data {
+        height: 360px;
+        min-height: 360px;
+        overflow: auto;
+    }
+
+    .img-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .card-projects p {
+    font-size: 0.9rem;
+    }
+
+
 }
