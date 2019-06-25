@@ -35,6 +35,7 @@
     padding-top: 0%;
     width: 98%;
     margin: auto;
+    min-height: 779px;
 
 }
 
@@ -145,7 +146,7 @@
 input[type="text"]:not(.browser-default),
 input.valid[type="text"]:not(.browser-default){
      border: 0px solid white;
-     height: 2.5rem;
+     height: 2rem;
      box-shadow: 0 1px 0 0 grey;
      font-family: 'Jura', sans-serif;
 
@@ -179,8 +180,8 @@ input.valid[type="text"]:not(.browser-default){
 
 .btn-file {
     width: 20%;
-    height: 2.5rem !important;
-    line-height: 2.5rem !important;
+    height: 2rem !important;
+    line-height: 2rem !important;
     border-color: transparent;
     text-align: center;
     color: white;
@@ -203,7 +204,7 @@ input.valid[type="text"]:not(.browser-default){
     box-shadow: none;
     cursor: pointer;
     font-size: 11px;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 16px;
     padding: 4px 12px;
     position: relative;
@@ -225,7 +226,7 @@ input.valid[type="text"]:not(.browser-default){
     box-shadow: none;
     cursor: pointer;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 20px;
     padding: 6px 16px;
     position: relative;

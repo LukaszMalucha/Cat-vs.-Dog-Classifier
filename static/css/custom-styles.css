@@ -9,7 +9,7 @@
 }
 @font-face {
     font-family: 'Jura';
-    font-weight: bold 600;
+    font-weight: 600;
     src: url('/static/fonts/TTF/Jura-DemiBold.otf');
 }
 
@@ -102,6 +102,11 @@ h2 {
     line-height: 120%;
 }
 
+button {
+    font-family: 'Jura', sans-serif;
+    text-transform: none !important;
+}
+
 /*------------------------------------------------------------------------------
     ROWS
 ------------------------------------------------------------------------------*/
@@ -114,7 +119,7 @@ h2 {
 .row-title {
     width: 100%;
     color: #181818;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 900;
     text-align: center;
 }
@@ -228,6 +233,24 @@ h2 {
     border-bottom: 1px solid #e6ecf0;
 }
 
+.row-visit h2{
+    font-size: 1rem;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: #14171a;
+    font-weight: 600;
+}
+
+
+.row-visit h5 {
+    color: #657786;
+    font-size: 0.8rem;
+    margin: 5px;
+    font-weight: 300;
+    z-index: 5;
+}
+
+
 #tweetColumn {
     max-height: 490px;
     overflow: auto;
@@ -240,7 +263,7 @@ h2 {
 
 
 .row-break {
-    height: 1px;
+    margin-bottom: 9px;
 }
 
 
