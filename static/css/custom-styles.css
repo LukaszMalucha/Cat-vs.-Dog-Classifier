@@ -102,10 +102,6 @@ h2 {
     line-height: 120%;
 }
 
-button {
-    font-family: 'Jura', sans-serif;
-    text-transform: none !important;
-}
 
 /*------------------------------------------------------------------------------
     ROWS
@@ -281,6 +277,258 @@ button {
     border-radius: 50px;
 
 }
+
+/*------------------------------------------------------------------------------
+    DASHBOARD CARDS
+------------------------------------------------------------------------------*/
+
+.dashboard-cards {
+    width: 60%;
+    margin: auto;
+}
+
+
+
+.img-pet {
+    width:80%;
+    margin: auto;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+.card-prediction {
+    width: 40%;
+    margin: auto;
+    border: none;
+    box-shadow: none;
+    display: none;
+    background: transparent;
+}
+
+.card .card-content {
+    padding: 12px;
+}
+
+.card-title {
+    padding-top: 0%;
+    width: 98%;
+    margin: auto;
+    min-height: 779px;
+
+}
+
+
+.card-side {
+    padding-top: 0%;
+    width: 94%;
+    margin: auto;
+    margin-bottom: 6px;
+    text-align: left;
+    padding-bottom: 1px;
+    border: 1px solid #e6ecf0;
+    border: none;
+}
+
+.card-side h1 {
+    font-size: 1rem;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: #14171a;
+    font-weight: 600;
+}
+
+.card-side .card-content {
+    padding: 15px;
+    padding-top: 0px;
+    padding-bottom: 12px;
+    margin-top: 0px;
+    color: #1DA1F2;
+    font-weight: 500;
+    font-size: 0.8rem;
+    max-height: 700px;
+    overflow: auto;
+
+}
+
+.card-side .card-content p {
+    color: #657786;
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+    font-weight: 500;
+    z-index: 5;
+}
+
+
+.card-projects {
+    padding: 15px;
+    width: 94%;
+    margin: auto;
+    margin-bottom: 5px;
+    text-align: left;
+    border: 1px solid #e6ecf0;
+    border: none;
+}
+
+
+
+.card-projects h1 {
+    font-size: 1rem;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: #14171a;
+    font-weight: 600;
+}
+
+.card-projects .card-content {
+    padding: 15px;
+    padding-top: 0px;
+    padding-bottom: 12px;
+    margin-top: 0px;
+    color: #1DA1F2;
+    font-weight: 500;
+    font-size: 0.8rem;
+    max-height: 700px;
+    overflow: auto;
+
+}
+
+.card-projects p {
+    color: #252b30;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    font-weight: 600;
+    z-index: 5;
+}
+
+.card-projects .span-trend {
+    color: #7f7f7f;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------
+    EDIT & ADD FORMS + TABLE
+------------------------------------------------------------------------------*/
+
+input[type="text"]:not(.browser-default),
+input.valid[type="text"]:not(.browser-default){
+     border: 0px solid white;
+     height: 2rem;
+     box-shadow: 0 1px 0 0 grey;
+     font-family: 'Jura', sans-serif;
+
+}
+
+::placeholder {
+    color: #191919;
+}
+
+/*------------------------------------------------------------------------------
+    BUTTONS
+------------------------------------------------------------------------------*/
+
+button {
+    font-family: 'Jura', sans-serif;
+    text-transform: none !important;
+}
+
+.btn-submit {
+    width: 50%;
+    color: white;
+    background: #4ab3f4;
+    border-radius: 20px;
+    border:none;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+}
+
+.btn-submit:hover, .btn-submit:active, .btn-submit:focus {
+    background: #006dbf;
+    color: white;
+}
+
+.btn-file {
+    width: 20%;
+    height: 2rem !important;
+    line-height: 2rem !important;
+    border-color: transparent;
+    text-align: center;
+    color: white;
+    background-color:  #C0C0C0;
+    font-size: 16px;
+    font-family: 'Jura', sans-serif;
+}
+
+.btn-file:hover, .btn-file:active, .btn-file:focus {
+    background-color:  #A9A9A9;
+    color: white;
+}
+
+
+.btn-visit {
+    color: #1DA1F2;
+    background: #ffff;
+    border-radius: 20px;
+    border: 1px solid #1DA1F2;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 16px;
+    padding: 4px 12px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 0;
+    text-transform: none;
+}
+.btn-visit:hover,
+.btn-visit:active,
+.btn-visit:focus {
+    background: #e8f5fd;
+}
+
+.btn-trends {
+    color: white;
+    background: #4ab3f4;
+    border-radius: 20px;
+    border:none;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+
+}
+
+.btn-trends:hover,
+.btn-trends:active,
+.btn-trends:focus {
+    background: #006dbf;
+    color: white;
+}
+
 /*------------------------------------------------------------------------------
     FOOTER
 ------------------------------------------------------------------------------*/

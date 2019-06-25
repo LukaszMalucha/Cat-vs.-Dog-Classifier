@@ -63,12 +63,12 @@
     <!-- DROPDOWN -->
     <ul id="dropdown1" class="dropdown-content">
         {% if current_user.email != "Guest" %}
-        <li><a href="{{ url_for('userlogout') }}" id="dropdown_link"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+        <li><a href="{{ url_for('userlogout') }}" class="dropdown_link"><i class="fas fa-sign-out-alt"></i> Log Out</a>
         </li>
         {% else %}
-        <li><a href="{{ url_for('userlogin') }}" id="dropdown_link"><i class="fa fa-user fa-fw"></i> Log In</a>
+        <li><a href="{{ url_for('userlogin') }}" class="dropdown_link"><i class="fa fa-user fa-fw"></i> Log In</a>
         </li>
-        <li><a href="{{ url_for('userregister') }}" id="dropdown_link"><i class="fas fa-tasks"></i> Register</a>
+        <li><a href="{{ url_for('userregister') }}" class="dropdown_link"><i class="fas fa-tasks"></i> Register</a>
         </li>
         {% endif %}
     </ul>
@@ -79,12 +79,12 @@
         <li><a target="_blank" href="https://github.com/LukaszMalucha/Cat-vs.-Dog-Classifier/"><i
                 class="fab fa-github"></i> GitHub</a></li>
         {% if current_user.email != "Guest" %}
-        <li><a href="{{ url_for('userlogout') }}" id="dropdown_link"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+        <li><a href="{{ url_for('userlogout') }}" class="dropdown_link"><i class="fas fa-sign-out-alt"></i> Log Out</a>
         </li>
         {% else %}
-        <li><a href="{{ url_for('userlogin') }}" id="dropdown_link"><i class="fa fa-user fa-fw"></i> Log In</a>
+        <li><a href="{{ url_for('userlogin') }}" class="dropdown_link"><i class="fa fa-user fa-fw"></i> Log In</a>
         </li>
-        <li><a href="{{ url_for('userregister') }}" id="dropdown_link"><i class="fas fa-tasks"></i> Register</a>
+        <li><a href="{{ url_for('userregister') }}" class="dropdown_link"><i class="fas fa-tasks"></i> Register</a>
         </li>
         {% endif %}
     </ul>
@@ -106,7 +106,8 @@
                             <div class="row row-side-blue"></div>
                             <div class="row row-description">
                                 <div class="col-sm-4 col-md-4 plain-element text-center hashtag-column">
-                                    <i class="fas fa-globe-americas hashtag-icon"></i>
+                                    <img src="{{url_for('static', filename='img/septellar.png')}}"
+                                         class="img responsive" alt="septellar">
                                 </div>
                                 <div class="col-sm-8 col-md-8 plain-element">
                                     <h1>Classifier Algorithm </h1>
@@ -179,7 +180,8 @@
                             <div class="row row-side-blue"></div>
                             <div class="row row-description">
                                 <div class="col-sm-4 col-md-4 plain-element text-center hashtag-column">
-                                    <i class="fas fa-hashtag hashtag-icon"></i>
+                                    <img src="{{url_for('static', filename='img/septellar.png')}}"
+                                         class="img responsive" alt="septellar">
                                 </div>
                                 <div class="col-sm-8 col-md-8 plain-element col-features">
                                     <h1>Visit other projects </h1>
@@ -256,7 +258,7 @@
                                          class="img responsive img-icon" alt="bepartisan">
                                 </div>
                                 <div class="col-xs-8 col-sm-8 col-md-8 plain-element">
-                                    <p> Be-partisan </p>
+                                    <p> Be-partisan Classifier </p>
                                     <button class="btn-visit" onclick="window.open('http://www.bepartisan.com')">Visit
                                         Application
                                     </button>
