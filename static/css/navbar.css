@@ -1,3 +1,4 @@
+
 /*------------------------------------------------------------------------------
     TOP NAVBAR
 ------------------------------------------------------------------------------*/
@@ -22,7 +23,7 @@
     z-index: 300;
     border: none;
     height: 42px;
-    padding-left: 19.7%;
+    padding-left: 19.6%;
     padding-right: 20.5%;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -46,7 +47,7 @@
 }
 
 .navbar-brand .company-logo {
-    height: 32px;
+    height: 3.5rem;
 
 }
 
@@ -190,17 +191,17 @@ nav ul li:hover, nav ul li:active {
 ------------------------------------------------------------------------------*/
 
 .top-navbar {
-    background: #191919;
+    background: #ffffff;
     box-shadow: none;
-    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
 }
 
 .navbar-brand .material-icons {
-    color: white;
+    color: #1da1f2;
 }
 
 nav ul a {
-    color: white;
+    color: #798b9a;
 }
 
 .dropdown-content {
@@ -208,12 +209,12 @@ nav ul a {
 }
 
 .dropdown-content li>a {
-    color: white;
-    background-color: #191919;
+    color: #798b9a;
+    background-color: #fff;
 }
 
 .dropdown-content li>fa {
-    color: #191919;
+    color: #003f67;
 }
 
 
@@ -228,15 +229,21 @@ nav ul a {
     color: #e5ebef;
 }
 
+.nav i {
+    color: inherit;
+}
+
+
  nav ul a:hover {
-     color: #191919;
+     background-color: #f5f8fa;
+     color: #1da1f2;
  }
 
 .nav > li > a:hover,
  .nav > li > a:focus,
  .nav > li > a:active{
     background-color: transparent;
-    color: white;
+    color: #1da1f2;
 }
 
  .navbar-default .navbar-brand:hover {
@@ -244,15 +251,19 @@ nav ul a {
  }
 
 .sidenav {
-    background: #191919;
+    background: #1da1f2;
 }
 
 .sidenav li > a {
-    color: white
+    color: #fff;
 }
 
 .sidenav li > a > i {
-    color: white;
+    color: inherit;
+}
+
+.mid-tweet {
+    color: #1da1f2;
 }
 
 
@@ -360,5 +371,6 @@ nav ul a {
 
 
 }
+
 
 

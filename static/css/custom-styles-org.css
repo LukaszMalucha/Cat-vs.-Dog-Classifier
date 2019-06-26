@@ -15,9 +15,10 @@
 
 body {
     font-family: 'Jura', sans-serif;
-        background-image: url('../../static/img/background.png');
+    background-image: url('../../static/img/background.png');
 
     background-size: cover;
+
 }
 
 
@@ -191,7 +192,7 @@ h2 {
 
 .row-blue {
     padding: 2%;
-    background: #3b6e9f;
+    background: #1da1f2;
 
 }
 
@@ -200,7 +201,7 @@ h2 {
     height: 95px;
     min-height: 95px;
     margin: 0;
-    background: #3b6e9f;
+    background: #1da1f2;
     border: none;
 
 
@@ -282,7 +283,7 @@ h2 {
 .hashtag-icon {
     font-size: 35px;
     color: #fff;
-    background: #3b6e9f;
+    background: #1da1f2;
     padding: 15px 17px 15px 17px;
     border: 1px solid #A4D9F9;
     border-radius: 50px;
@@ -345,7 +346,7 @@ h2 {
     padding-top: 0px;
     padding-bottom: 12px;
     margin-top: 0px;
-    color: #3b6e9f;
+    color: #1DA1F2;
     font-weight: 500;
     font-size: 0.8rem;
     max-height: 700px;
@@ -387,7 +388,7 @@ h2 {
     padding-top: 0px;
     padding-bottom: 12px;
     margin-top: 0px;
-    color: #3b6e9f;
+    color: #1DA1F2;
     font-weight: 500;
     font-size: 0.8rem;
     max-height: 700px;
@@ -449,7 +450,7 @@ button {
 .btn-submit {
     width: 50%;
     color: white;
-    background: #3b6e9f;
+    background: #4ab3f4;
     border-radius: 20px;
     border:none;
     box-shadow: none;
@@ -486,10 +487,10 @@ button {
 
 
 .btn-visit {
-    color: #3b6e9f;
+    color: #1DA1F2;
     background: #ffff;
     border-radius: 20px;
-    border: 1px solid #3b6e9f;
+    border: 1px solid #1DA1F2;
     box-shadow: none;
     cursor: pointer;
     font-size: 11px;
@@ -509,7 +510,7 @@ button {
 
 .btn-trends {
     color: white;
-    background: #3b6e9f;
+    background: #4ab3f4;
     border-radius: 20px;
     border:none;
     box-shadow: none;
@@ -529,6 +530,7 @@ button {
     background: #006dbf;
     color: white;
 }
+
 /*------------------------------------------------------------------------------
     FOOTER
 ------------------------------------------------------------------------------*/
@@ -538,19 +540,19 @@ button {
     bottom: 0;
     width: 100%;
     text-align: center;
-    background-color: transparent;
+    background-color: #181818;
 }
 
 .footer p {
     margin: 0;
     font-size: 12px;
-    color: #8A8A8A;
+    color: #fff;
     padding: 15px 0px;
     text-align: center;
 }
 
 .footer a {
-    color: #8A8A8A;
+    color: #fff;
 }
 
 .footer a:hover,
@@ -611,7 +613,7 @@ button {
     .hashtag-icon {
         font-size: 32px;
         color: #fff;
-        background: #3b6e9f;
+        background: #1da1f2;
         padding: 15px 17px 15px 17px;
         border: 1px solid #A4D9F9;
         border-radius: 50px;
