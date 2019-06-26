@@ -650,132 +650,41 @@ button {
         width: 80%;
     }
 
-    .card-data {
-        min-height: 400px;
-        overflow: auto;
-    }
 
-    .card-data-short {
-        min-height: 100px;
-    }
-
-    .card-side h1 {
-        font-size: 0.9rem;
-    }
-
-    .hashtag-icon {
-        font-size: 32px;
-        color: #fff;
-        background: #3b6e9f;
-        padding: 15px 17px 15px 17px;
-        border: 1px solid #A4D9F9;
-        border-radius: 50px;
-    }
-
-    .card-side .card-content {
-        padding-bottom: 1px;
-    }
 
     .img-icon {
         width: 45px;
         height: 45px;
     }
 
-    .card-projects p {
-        font-size: 0.8rem;
-    }
-
-
-
-    .btn-visit {
-        font-size: 9px;
-        padding: 2px 12px;
-    }
-
-
-    .card-side .card-content {
-        padding-bottom: 4px;
-    }
 
     .row-break {
-        height: 10px;
-    }
-
-    .card-menu p {
-        font-size: 0.7rem;
-    }
-
-    .row-form {
-        width: 40%;
-    }
-
-    .btn-submit {
-        width: 30%;
+        height: 0px;
     }
 
 }
 
-/* MAX WIDTHS: MEDIUM SCREEN---------------------------------------------------*/
-
-@media(max-width:1440px) {
-
-    .row-title {
-        width:90%;
-        font-size: 1.5rem;
-
-    }
-
-    .row-cards {
-        width: 80%;
-    }
-
-    .row-form {
-        width: 50%;
-    }
-
-    .btn-submit {
-        width: 60%;
-    }
-
-    .img-icon {
-        width: 45px;
-        height: 45px;
-    }
-
+@media(max-width:1700px) {
     .dashboard-cards {
-        width: 100%;
+        width: 90%;
     }
-
-    .btn-visit {
-        font-size: 9px;
-    }
-
-
-    .card-side h1 {
-        font-size: 0.9rem;
-    }
-
-    .card-side .card-content {
-        padding-bottom: 11px;
-    }
-
-    .img-icon {
-        width: 36px;
-        height: 36px;
-    }
-
-    .card-projects p {
-    font-size: 0.76rem;
-    }
-
 
 }
+
+
 /* MAX WIDTHS: MEDIUM SCREEN---------------------------------------------------*/
 
-@media(max-width:993px) {
-
+@media(max-width:1025px) {
     .dashboard-cards {
         width: 100%;
+    }
+
+    .card-title {
+        min-height: 764px;
+    }
+
+   .row-break {
+        height: 3px;
     }
 
     .btn-visit {
@@ -813,7 +722,7 @@ button {
     }
 
     .row-form {
-        width: 80%;
+        width: 90%;
     }
 
     .img-icon {
@@ -848,6 +757,11 @@ button {
 
     .card-projects p {
     font-size: 0.9rem;
+    }
+
+    .card-content,
+    .col-features {
+        text-align: center;
     }
 
 
