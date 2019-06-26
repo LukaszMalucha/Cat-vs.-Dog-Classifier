@@ -3,10 +3,12 @@ body {
     background-size: cover;
 }
 
+.container {
+    width: 80%;
+}
 
 .form-signin {
     text-align: center;
-    max-width: 40%;
     padding: 15px 0px 0px 0px;
     margin: 0 auto;
     background-color: white;
@@ -25,12 +27,12 @@ body {
     border-color: transparent;
     text-align: right;
     color: white;
-    background-color: #165d81;
+    background-color: #3b6e9f;
     font-size: 18px;
 }
 
 .btn-login:hover, .btn-login:active, .btn-login:focus {
-    background-color: #0f415a;
+    background-color: #4f88be;
 }
 
 
@@ -43,7 +45,7 @@ body {
     border-radius: 50px;
     background-color: white;
     padding: 3%;
-    color: #165d81;
+    color: #3b6e9f;
 }
 
 .form-box {
@@ -73,8 +75,8 @@ h6 {
 input[type="email"]:not(.browser-default):focus:not([readonly]),
 input[type="password"]:not(.browser-default):focus:not([readonly]),
 input[type="text"]:not(.browser-default):focus:not([readonly]) {
-    border-bottom: 1px solid #165d81;
-    box-shadow: 0 1px 0 0 #26a69a;
+    border-bottom: 1px solid #3b6e9f;
+    box-shadow: 0 1px 0 0 #3b6e9f;
     text-align: center;
 
 }
@@ -112,10 +114,6 @@ label {
     font-size: 1rem;
 }
 
-
-
-
-
 .control-label {
     display: none;
 }
@@ -126,6 +124,12 @@ label {
     margin-top: 2%;
 }
 
+
+.has-error .help-block {
+    color: red;
+    font-size: 0.8rem;
+}
+
 /*----------------------------------------------
     MEDIA QUERIES
 ------------------------------------------------*/
@@ -134,24 +138,15 @@ label {
 @media(max-width:1900px) {}
 
 
-@media(max-width:1500px) {}
-
 @media(max-width:1500px) {
-    .form-signin {
-    max-width: 60%;
-    }
-
-     #page-index {
-    padding-top: 0px;
+    .container {
+        width: 90%;
     }
 
 
 }
 
 @media(max-width:859px) {
-    .form-signin {
-    max-width: 100%;
-    }
 
 
 }

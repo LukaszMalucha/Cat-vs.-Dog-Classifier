@@ -36,7 +36,7 @@
     width: 100%;
     height: 42px;
     text-align: left;
-    padding-top: 8px;
+    padding-top: 6px;
     font-weight: 700;
     color: #1a2026;
     background: transparent;
@@ -47,7 +47,7 @@
 }
 
 .navbar-brand .company-logo {
-    height: 3.5rem;
+    height: 2.2rem;
 
 }
 
@@ -243,7 +243,7 @@ nav ul a {
  .nav > li > a:focus,
  .nav > li > a:active{
     background-color: transparent;
-    color: #1da1f2;
+    color: #4f88be;
 }
 
  .navbar-default .navbar-brand:hover {

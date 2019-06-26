@@ -15,9 +15,9 @@
 
 body {
     font-family: 'Jura', sans-serif;
-        background-image: url('../../static/img/background.png');
-
+    background-image: url('../../static/img/background.png');
     background-size: cover;
+    background: #e6e5e6;
 }
 
 
@@ -92,8 +92,10 @@ h2 {
 
 
 .img-column {
-    width: 48px;
-    height: 48px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: 1px solid white;
 }
 
 .img-pet {
@@ -105,7 +107,9 @@ h2 {
 
 }
 
-
+.img-icon {
+    border-radius: 50px;
+}
 
 .card-content h6{
     color: #252b30;
@@ -170,7 +174,7 @@ h2 {
     font-size: 24px;
     font-weight: 500;
     color: white;
-    margin-bottom: 1%;
+    margin-bottom: 0;
     margin-top: 0;
 }
 
@@ -316,7 +320,9 @@ h2 {
     padding-top: 0%;
     width: 98%;
     margin: auto;
-    min-height: 760px;
+    min-height: 772px;
+    max-height: 860px;
+    overflow: auto;
 
 }
 
@@ -408,9 +414,24 @@ h2 {
     border: none;
 }
 
+.card-sentiment {
+    padding: 10px 10px 0px 10px;
+    margin-top: 0px;
+    border-bottom: 1px solid #e6ecf0;
+    box-shadow: none;
+}
 
+.card-sentiment p {
+    font-size: 14px;
+    color: #333;
+}
 
-
+.card-sentiment .card-image img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #e6ecf0;
+    margin-bottom: -1px;
+}
 
 
 
@@ -463,7 +484,7 @@ button {
 }
 
 .btn-submit:hover, .btn-submit:active, .btn-submit:focus {
-    background: #006dbf;
+    background: #4f88be;
     color: white;
 }
 
@@ -526,9 +547,43 @@ button {
 .btn-trends:hover,
 .btn-trends:active,
 .btn-trends:focus {
-    background: #006dbf;
+    background: #4f88be;
     color: white;
 }
+
+
+.btn-sentiment {
+    width: 100%;
+    background: white;
+    margin-top: -1px;
+    border: 1px solid #e6ecf0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: left;
+    padding: .75em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 14px;
+}
+
+.btn-sentiment:active,
+.btn-sentiment:hover,
+.btn-sentiment:focus {
+    background-color: #f5f8fa;
+}
+
+
+.btn-sentiment b {
+    font-size: 14px;
+
+}
+
+
+.btn-sentiment p {
+    margin-top: 5px !important;
+    line-height: 1.3em;
+}
+
 /*------------------------------------------------------------------------------
     FOOTER
 ------------------------------------------------------------------------------*/
@@ -544,13 +599,13 @@ button {
 .footer p {
     margin: 0;
     font-size: 12px;
-    color: #8A8A8A;
+    color: #7d7d7d;
     padding: 15px 0px;
     text-align: center;
 }
 
 .footer a {
-    color: #8A8A8A;
+    color: #7d7d7d;
 }
 
 .footer a:hover,
