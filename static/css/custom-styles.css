@@ -664,9 +664,14 @@ button {
 
 }
 
-@media(max-width:1700px) {
+@media(max-width:1300px) {
+
     .dashboard-cards {
         width: 90%;
+    }
+
+    .row-break {
+        height: 0px;
     }
 
 }
@@ -712,7 +717,7 @@ button {
 @media(max-width:522px) {
 
     .row-title {
-        width:90%;
+        width:100%;
         font-size: 1.5rem;
 
     }

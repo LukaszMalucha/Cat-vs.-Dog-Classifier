@@ -284,6 +284,14 @@ nav ul a {
 
 }
 
+@media(max-width:1300px) {
+        .top-navbar {
+        padding-left: 5%;
+        padding-right: 6%;
+    }
+
+}
+
 @media(min-width:1025px) {
 
     .sidenav-trigger {
