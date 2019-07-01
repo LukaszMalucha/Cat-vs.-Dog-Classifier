@@ -273,10 +273,6 @@ h2 {
 }
 
 
-.row-break {
-    margin-bottom: 9px;
-}
-
 
 .hashtag-column {
     position: relative;
@@ -320,8 +316,6 @@ h2 {
     padding-top: 0%;
     width: 98%;
     margin: auto;
-    min-height: 772px;
-    max-height: 860px;
     overflow: auto;
 
 }
@@ -331,12 +325,15 @@ h2 {
     padding-top: 0%;
     width: 94%;
     margin: auto;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
     text-align: left;
     padding-bottom: 1px;
     border: 1px solid #e6ecf0;
     border: none;
 }
+
+
+
 
 .card-side h1 {
     font-size: 1rem;
@@ -433,13 +430,31 @@ h2 {
     margin-bottom: -1px;
 }
 
+/*------------------------------------------------------------------------------
+    BALANCING HEIGHTS
+------------------------------------------------------------------------------*/
 
 
+.card-side-left {
+    height: 240px;
+}
+
+.card-projects-left {
+    height: 520px;
+}
+
+.card-title {
+    height: 765px;
+}
 
 
+.card-side-right {
+    height: 200px;
+}
 
-
-
+.card-projects-right {
+    height: 560px;
+}
 
 /*------------------------------------------------------------------------------
     EDIT & ADD FORMS + TABLE
@@ -658,20 +673,12 @@ button {
     }
 
 
-    .row-break {
-        height: 0px;
-    }
-
 }
 
 @media(max-width:1300px) {
 
     .dashboard-cards {
         width: 90%;
-    }
-
-    .row-break {
-        height: 0px;
     }
 
 }
@@ -682,14 +689,6 @@ button {
 @media(max-width:1025px) {
     .dashboard-cards {
         width: 100%;
-    }
-
-    .card-title {
-        min-height: 764px;
-    }
-
-   .row-break {
-        height: 3px;
     }
 
     .btn-visit {
@@ -751,7 +750,6 @@ button {
 
     .card-data {
         height: 360px;
-        min-height: 360px;
         overflow: auto;
     }
 
@@ -769,6 +767,16 @@ button {
         text-align: center;
     }
 
+    .card-side-left {
+        height: 280px;
+    }
 
+    .card-side-right {
+        height: 280px;
+    }
+
+    .card-title {
+        height: 600px;
+    }
 
 }
