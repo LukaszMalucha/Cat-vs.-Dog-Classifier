@@ -3,7 +3,8 @@ Flask-Bootstrap==3.3.7.1
 Flask-Login==0.4.1
 Flask-RESTful==0.3.7
 Flask-S3==0.3.3
-Flask-SQLAlchemy==2.3.2
+Flask-SQLAlchemy==2.4.1
+flask-talisman==0.7.0
 Flask-Uploads==0.2.1
 Flask-WTF==0.14.2
 gunicorn==19.9.0
@@ -15,6 +16,7 @@ Keras-Applications==1.0.6
 Keras-Preprocessing==1.0.5
 numpy==1.16.4
 Pillow==5.2.0
+pyopenssl==19.0.0
 scikit-image==0.15.0
 scikit-learn==0.21.2
 scipy==1.1.0
