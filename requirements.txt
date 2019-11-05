@@ -4,7 +4,6 @@ Flask-Login==0.4.1
 Flask-RESTful==0.3.7
 Flask-S3==0.3.3
 Flask-SQLAlchemy==2.4.1
-flask-talisman==0.7.0
 Flask-Uploads==0.2.1
 Flask-WTF==0.14.2
 gunicorn==19.9.0

@@ -334,28 +334,6 @@ nav ul a {
         width: 70%;
     }
 
-    nav a.sidenav-trigger {
-        line-height: 1;
-        display: block;
-        padding: 0px !important;
-        margin: 0px !important;
-        position: fixed;
-        top: 10px;
-        right: 10px;
-    }
-
-    nav a.sidenav-trigger i {
-        height: 40px;
-        line-height: 1;
-    }
-
-    #trigger {
-        position: relative;
-        top: 0px;
-        left: 0px;
-        margin: 0px;
-    }
-
 }
 
 
