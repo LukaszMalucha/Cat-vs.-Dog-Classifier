@@ -13,7 +13,7 @@
 
 ## PROJECT OVERVIEW
 
-Image classifier trained to distinct between cats and dogs images. Convolutional Neural Network was built with Keras & Tensorflow(GPU). 
+Image classifier trained to distinct between cats and dogs images. Convolutional Neural Network was built with Keras & Tensorflow 2.0(GPU). 
 Heroku-hosted web application was built with Flask framework. <br>
 
 [Kaggle Dataset](https://www.kaggle.com/c/dogs-vs-cats/data)
@@ -21,11 +21,10 @@ Heroku-hosted web application was built with Flask framework. <br>
 ## CONVOLUTIONAL NEURAL NETWORK CHARACTERISTICS
 
 1. Image Input Shape - 128,128,3, activation - relu
-2. Three additional Convolutional Layers (batch size - respectively 32,64,128, dropout rate - 0.25,0.2,0.3)
-3. Units in hidden layer - 128
-4. Compiler - optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy']
-5. Acc - 89% Loss - 25% (approx 30min/epoch on GPU)
-6. CNN Code Location: deep_learning/ConvolutionalNeuralNetwork.py
+2. Transferred Learning from Google MobileNetV2 with customized head
+4. Compiler - optimizer = 'RMSprop', loss = 'binary_crossentropy', metrics = ['accuracy']
+5. Acc - 92% Loss - 19% (approx 30min/epoch on GPU)
+6. CNN Code Location: deep_learning/ConvolutionalNeuralNetwork_V2.py
 
 
 ## TOOLS, MODULES & TECHNIQUES:
