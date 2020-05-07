@@ -1,7 +1,7 @@
 # Cat vs. Dog Image Classifier
 
 
-#### [Visit the App](http://www.septellar.com/)
+#### [Visit the App](https://www.septellar.com/)
 
 
 <br>
