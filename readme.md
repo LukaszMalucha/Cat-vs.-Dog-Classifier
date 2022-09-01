@@ -1,9 +1,5 @@
 # Cat vs. Dog Image Classifier
 
-
-#### [Visit the App](https://www.septellar.com/)
-
-
 <br>
 
 ![1](https://user-images.githubusercontent.com/26208598/60211178-72137d00-9856-11e9-90b6-5a6a29094c0a.PNG)
